@@ -43,8 +43,7 @@ p {
 body{
     font-family: 'Inter', sans-serif;
 }
-main{
-}
+
 .main-inner{
     background: url(../img/main-bg.png);
     background-repeat: no-repeat, repeat;
@@ -460,8 +459,8 @@ li.items {
         display: none !important;
    }
     .topnav .img-fluid{
-        height: 57px;
-        width: 172px;
+        height: 78px;
+    width: 213px;
    }
     .product-cards .col-lg-4 {
         margin: 0px 0px 20px 0px 
@@ -490,9 +489,14 @@ li.items {
     .custom-mobile-row{
         padding-top: 0px !important ;
    }
-    .product-cards{
-        margin-top: 59px;
-   }
+      .topnav .items {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #1D3B54;
+        line-height: 37px;
+    }
     .product-cards h4{
         font-family: 'Inter';
         font-style: normal;
@@ -514,6 +518,29 @@ li.items {
         font-size: 21px;
         line-height: 42px;
         color: #323232;
+   }
+   .navbar-dark .navbar-nav .nav-link {
+    color: black;
+}
+.topnav .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
+}
+.topnav .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #3169b4;
+}
+   .topnav .bg-primary{
+    background: white !important;
    }
     .request-button {
         width: 107px;
