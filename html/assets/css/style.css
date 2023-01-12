@@ -125,6 +125,20 @@ header a {
     justify-content: center;
     display: inline-grid;
 }
+.request-bg{
+    position: relative;
+}
+
+.request-bg:after{
+    position:absolute;
+    content:'';
+    height: 130px;
+    background-color:#FFCB05;
+    width:100%;
+    top:50%;
+    margin-top: -62px;
+    z-index:-1 
+}
 .product-bags{
     position: relative;
 }
@@ -132,7 +146,7 @@ header a {
     position:absolute;
     content:'';
     height: 133px;
-    background-color:#FFF1DC;
+    background-color:#FFCB05;
     width:100%;
     top:50%;
     margin-top: -62px;
@@ -542,21 +556,21 @@ li.items {
    .topnav .bg-primary{
     background: white !important;
    }
-    .request-button {
-        width: 107px;
-        height: 43px;
-        left: 1082px;
-        top: 1047px;
-        border: 0 !important;
-        color: white !important;
-        background: #3169B4 !important;
-        border-radius: 27.5px !important;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 42px;
-   }
+   .request-button {
+    width: 107px;
+    /* height: 43px; */
+    left: 1082px;
+    top: 1047px;
+    border: 0 !important;
+    color: white !important;
+    background: #3169B4 !important;
+    border-radius: 27.5px !important;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 42px; */
+}
     .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
         outline: none !important;
         box-shadow: none !important;
