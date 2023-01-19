@@ -559,6 +559,16 @@ li.items {
     .custom-mobile-row{
         padding-top: 0px !important ;
    }
+
+   .product-page .wrapper dl, dt, ol, ul {
+    /* margin: 0px 0px 0px 0px; */
+    font-family: 'Inter';
+    font-style: normal;
+ 
+    font-weight: 400;
+    font-size: 13px;
+    padding: 0px !important;
+}
       .topnav .items {
         font-size: 16px;
         font-weight: 600;
@@ -713,7 +723,7 @@ color: #323232;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 42px;
+        line-height: 30px;
         color: #FFFFFF;
     }
 
@@ -741,18 +751,90 @@ line-height: 42px;
 color: #323232;
 }
 
-.product-page .wrapper dl, ol, ul {
-    margin-top: 0;
-    margin-bottom :0;
+.product-page .wrapper dl, dt, ol, ul {
+    margin: 0px 0px 0px 0px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+
+
+
+}
+.product-page .wrapper dd{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400 !important;
+font-size: 14px;
+
+
+
+
+}
+
+.product-page .wrapper .stock-text{
+    color: 
+    #3169B4 !important;
+}
+
+.table-data{
+    display: inline-flex;
+    align-items: center;
+}
+.table-data:focus {
+    color: #92a9cd !important;
 }
 
 
+.accordion-button:not(.collapsed) {
+    
+    background-color: rgba(228, 240, 255, 0.7);
+   border: 0px !important;
+}
+.accordion-button{
+    background: rgba(228, 240, 255, 0.7);
+}
 
 
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #3169B4 !important;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+    border: 0px !important;
+}
+.col-md-3 .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #FFCB05 !important;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+    border: 0px !important;
+}
+.col-md-3 .accordion-button {background: rgba(255, 242, 221, 0.7) !important}
+.accordion-flush .accordion-item .accordion-button {
+    border-radius: 0;
+}
+.accordion-button:focus {
+    z-index: unset !important;
+    border-color: 0 !important;
+    outline: 0;
+    box-shadow: 0 0 0 0 !important;
+}
+ .view-text{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 28px;
+/* identical to box height, or 200% */
 
+text-decoration-line: underline;
 
+color: #3169B4;
 
+ }
+ 
+ .product-page .product-button1{
+    background: #D9D9D9;
+    border-radius: 5px solid transparent;
 
-
-
+ }
 /*  */
