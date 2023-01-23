@@ -14,3 +14,5 @@ function myFunction() {
           $('button.navbar-toggler').click();
       });
   });
+
+  // $(".accordion-button").click()
