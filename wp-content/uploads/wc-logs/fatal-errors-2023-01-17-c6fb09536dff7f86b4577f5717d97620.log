@@ -1,0 +1,151 @@
+2023-01-17T12:42:44+00:00 CRITICAL require(): Failed opening required '/var/www/html/barrier/wp-content/themes/twentytwentyone/classes/class-twenty-twenty-one-svg-icons.php' (include_path='.:/usr/share/php') in /var/www/html/barrier/wp-content/themes/twentytwentyone/functions.php on line 530
+
+2023-01-17T12:42:58+00:00 CRITICAL require(): Failed opening required '/var/www/html/barrier/wp-content/themes/twentytwentyone/classes/class-twenty-twenty-one-svg-icons.php' (include_path='.:/usr/share/php') in /var/www/html/barrier/wp-content/themes/twentytwentyone/functions.php on line 530
+
+2023-01-17T12:43:52+00:00 CRITICAL Uncaught Error: Class 'Twenty_Twenty_One_Custom_Colors' not found in /var/www/html/barrier/wp-content/themes/twentytwentyone/functions.php:129
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/class-wp-hook.php(308): twenty_twenty_one_setup()
+#1 /var/www/html/barrier/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/barrier/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/barrier/wp-settings.php(595): do_action()
+#4 /var/www/html/barrier/wp-config.php(97): require_once('/var/www/html/b...')
+#5 /var/www/html/barrier/wp-load.php(50): require_once('/var/www/html/b...')
+#6 /var/www/html/barrier/wp-blog-header.php(13): require_once('/var/www/html/b...')
+#7 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#8 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/twentytwentyone/functions.php on line 129
+
+2023-01-17T12:44:25+00:00 CRITICAL Uncaught Error: Call to undefined function twenty_twenty_one_get_non_latin_css() in /var/www/html/barrier/wp-content/themes/twentytwentyone/functions.php:521
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/class-wp-hook.php(308): twenty_twenty_one_non_latin_languages()
+#1 /var/www/html/barrier/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/barrier/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/barrier/wp-includes/script-loader.php(2180): do_action()
+#4 /var/www/html/barrier/wp-includes/class-wp-hook.php(308): wp_enqueue_scripts()
+#5 /var/www/html/barrier/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/barrier/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/barrier/wp-includes/general-template.php(3043): do_action()
+#8 /var/www/html/barrier/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#9 /var/www/html/barrier/wp-includes/template.php(783): require_once('/var/www/html/b...')
+#10 /var/www/html/bar in /var/www/html/barrier/wp-content/themes/twentytwentyone/functions.php on line 521
+
+2023-01-17T12:44:41+00:00 CRITICAL Uncaught Error: Call to undefined function twenty_twenty_one_get_non_latin_css() in /var/www/html/barrier/wp-content/themes/twentytwentyone/functions.php:521
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/class-wp-hook.php(308): twenty_twenty_one_non_latin_languages()
+#1 /var/www/html/barrier/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/barrier/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/barrier/wp-includes/script-loader.php(2180): do_action()
+#4 /var/www/html/barrier/wp-includes/class-wp-hook.php(308): wp_enqueue_scripts()
+#5 /var/www/html/barrier/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#6 /var/www/html/barrier/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/barrier/wp-includes/general-template.php(3043): do_action()
+#8 /var/www/html/barrier/wp-content/themes/twentytwentyone/header.php(20): wp_head()
+#9 /var/www/html/barrier/wp-includes/template.php(783): require_once('/var/www/html/b...')
+#10 /var/www/html/bar in /var/www/html/barrier/wp-content/themes/twentytwentyone/functions.php on line 521
+
+2023-01-17T12:44:53+00:00 CRITICAL Uncaught Error: Call to undefined function twenty_twenty_one_get_icon_svg() in /var/www/html/barrier/wp-content/themes/twentytwentyone/template-parts/header/site-nav.php:17
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template.php(785): require()
+#1 /var/www/html/barrier/wp-includes/template.php(718): load_template()
+#2 /var/www/html/barrier/wp-includes/general-template.php(204): locate_template()
+#3 /var/www/html/barrier/wp-content/themes/twentytwentyone/template-parts/header/site-header.php(19): get_template_part()
+#4 /var/www/html/barrier/wp-includes/template.php(785): require('/var/www/html/b...')
+#5 /var/www/html/barrier/wp-includes/template.php(718): load_template()
+#6 /var/www/html/barrier/wp-includes/general-template.php(204): locate_template()
+#7 /var/www/html/barrier/wp-content/themes/twentytwentyone/header.php(28): get_template_part()
+#8 /var/www/html/barrier/wp-includes/template.php(783): require_once('/var/www/html/b...')
+#9 /var/www/html/barrier/wp-includes/template.php(718): load_template( in /var/www/html/barrier/wp-content/themes/twentytwentyone/template-parts/header/site-nav.php on line 17
+
+2023-01-17T12:45:06+00:00 CRITICAL Uncaught Error: Call to undefined function twenty_twenty_one_get_icon_svg() in /var/www/html/barrier/wp-content/themes/twentytwentyone/template-parts/header/site-nav.php:17
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template.php(785): require()
+#1 /var/www/html/barrier/wp-includes/template.php(718): load_template()
+#2 /var/www/html/barrier/wp-includes/general-template.php(204): locate_template()
+#3 /var/www/html/barrier/wp-content/themes/twentytwentyone/template-parts/header/site-header.php(19): get_template_part()
+#4 /var/www/html/barrier/wp-includes/template.php(785): require('/var/www/html/b...')
+#5 /var/www/html/barrier/wp-includes/template.php(718): load_template()
+#6 /var/www/html/barrier/wp-includes/general-template.php(204): locate_template()
+#7 /var/www/html/barrier/wp-content/themes/twentytwentyone/header.php(28): get_template_part()
+#8 /var/www/html/barrier/wp-includes/template.php(783): require_once('/var/www/html/b...')
+#9 /var/www/html/barrier/wp-includes/template.php(718): load_template( in /var/www/html/barrier/wp-content/themes/twentytwentyone/template-parts/header/site-nav.php on line 17
+
+2023-01-17T12:45:26+00:00 CRITICAL require(): Failed opening required '/var/www/html/barrier/wp-content/themes/twentytwentyone/classes/class-twenty-twenty-one-svg-icons.php' (include_path='.:/usr/share/php') in /var/www/html/barrier/wp-content/themes/twentytwentyone/functions.php on line 530
+
+2023-01-17T12:45:35+00:00 CRITICAL require(): Failed opening required '/var/www/html/barrier/wp-content/themes/twentytwentyone/classes/class-twenty-twenty-one-svg-icons.php' (include_path='.:/usr/share/php') in /var/www/html/barrier/wp-content/themes/twentytwentyone/functions.php on line 530
+
+2023-01-17T12:45:35+00:00 CRITICAL require(): Failed opening required '/var/www/html/barrier/wp-content/themes/twentytwentyone/classes/class-twenty-twenty-one-svg-icons.php' (include_path='.:/usr/share/php') in /var/www/html/barrier/wp-content/themes/twentytwentyone/functions.php on line 530
+
+2023-01-17T12:45:36+00:00 CRITICAL require(): Failed opening required '/var/www/html/barrier/wp-content/themes/twentytwentyone/classes/class-twenty-twenty-one-svg-icons.php' (include_path='.:/usr/share/php') in /var/www/html/barrier/wp-content/themes/twentytwentyone/functions.php on line 530
+
+2023-01-17T12:45:36+00:00 CRITICAL require(): Failed opening required '/var/www/html/barrier/wp-content/themes/twentytwentyone/classes/class-twenty-twenty-one-svg-icons.php' (include_path='.:/usr/share/php') in /var/www/html/barrier/wp-content/themes/twentytwentyone/functions.php on line 530
+
+2023-01-17T12:45:36+00:00 CRITICAL require(): Failed opening required '/var/www/html/barrier/wp-content/themes/twentytwentyone/classes/class-twenty-twenty-one-svg-icons.php' (include_path='.:/usr/share/php') in /var/www/html/barrier/wp-content/themes/twentytwentyone/functions.php on line 530
+
+2023-01-17T12:45:36+00:00 CRITICAL require(): Failed opening required '/var/www/html/barrier/wp-content/themes/twentytwentyone/classes/class-twenty-twenty-one-svg-icons.php' (include_path='.:/usr/share/php') in /var/www/html/barrier/wp-content/themes/twentytwentyone/functions.php on line 530
+
+2023-01-17T12:45:37+00:00 CRITICAL require(): Failed opening required '/var/www/html/barrier/wp-content/themes/twentytwentyone/classes/class-twenty-twenty-one-svg-icons.php' (include_path='.:/usr/share/php') in /var/www/html/barrier/wp-content/themes/twentytwentyone/functions.php on line 530
+
+2023-01-17T12:52:57+00:00 CRITICAL Uncaught Error: Class 'Child_Wrap' not found in /var/www/html/barrier/wp-content/themes/twentytwentyone-child/header.php:56
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template.php(783): require_once()
+#1 /var/www/html/barrier/wp-includes/template.php(718): load_template()
+#2 /var/www/html/barrier/wp-includes/general-template.php(48): locate_template()
+#3 /var/www/html/barrier/wp-content/themes/twentytwentyone/page.php(12): get_header()
+#4 /var/www/html/barrier/wp-includes/template-loader.php(106): include('/var/www/html/b...')
+#5 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/twentytwentyone-child/header.php on line 56
+
+2023-01-17T12:52:58+00:00 CRITICAL Uncaught Error: Class 'Child_Wrap' not found in /var/www/html/barrier/wp-content/themes/twentytwentyone-child/header.php:56
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template.php(783): require_once()
+#1 /var/www/html/barrier/wp-includes/template.php(718): load_template()
+#2 /var/www/html/barrier/wp-includes/general-template.php(48): locate_template()
+#3 /var/www/html/barrier/wp-content/themes/twentytwentyone/404.php(12): get_header()
+#4 /var/www/html/barrier/wp-includes/template-loader.php(106): include('/var/www/html/b...')
+#5 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/twentytwentyone-child/header.php on line 56
+
+2023-01-17T12:52:58+00:00 CRITICAL Uncaught Error: Class 'Child_Wrap' not found in /var/www/html/barrier/wp-content/themes/twentytwentyone-child/header.php:56
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template.php(783): require_once()
+#1 /var/www/html/barrier/wp-includes/template.php(718): load_template()
+#2 /var/www/html/barrier/wp-includes/general-template.php(48): locate_template()
+#3 /var/www/html/barrier/wp-content/themes/twentytwentyone/404.php(12): get_header()
+#4 /var/www/html/barrier/wp-includes/template-loader.php(106): include('/var/www/html/b...')
+#5 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/twentytwentyone-child/header.php on line 56
+
+2023-01-17T13:58:44+00:00 CRITICAL Uncaught Error: Call to undefined function the_field() in /var/www/html/barrier/wp-content/themes/barrier/templates/home.php:9
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/barrier/templates/home.php on line 9
+
+2023-01-17T14:00:23+00:00 CRITICAL Uncaught Error: Call to undefined function get_taxonomy_image() in /var/www/html/barrier/wp-content/themes/barrier/templates/home.php:32
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/barrier/templates/home.php on line 32
+
+2023-01-17T14:09:39+00:00 CRITICAL Uncaught Error: Class 'Child_Wrap' not found in /var/www/html/barrier/wp-content/themes/barrier/header.php:56
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template.php(783): require_once()
+#1 /var/www/html/barrier/wp-includes/template.php(718): load_template()
+#2 /var/www/html/barrier/wp-includes/general-template.php(48): locate_template()
+#3 /var/www/html/barrier/wp-content/themes/barrier/page.php(12): get_header()
+#4 /var/www/html/barrier/wp-includes/template-loader.php(106): include('/var/www/html/b...')
+#5 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#6 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#7 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/barrier/header.php on line 56
+
