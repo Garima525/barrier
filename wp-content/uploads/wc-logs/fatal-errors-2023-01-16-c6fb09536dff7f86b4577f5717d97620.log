@@ -1,0 +1,64 @@
+2023-01-16T13:59:25+00:00 CRITICAL Uncaught Error: Call to undefined function get_wp_term_image() in /var/www/html/barrier/wp-content/themes/barrierthemenew/templates/home.php:38
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/barrierthemenew/templates/home.php on line 38
+
+2023-01-16T14:00:31+00:00 CRITICAL Uncaught Error: Call to undefined function get_wp_term_image() in /var/www/html/barrier/wp-content/themes/barrierthemenew/templates/home.php:38
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/barrierthemenew/templates/home.php on line 38
+
+2023-01-16T14:00:52+00:00 CRITICAL Uncaught Error: Call to undefined function get_wp_term_image() in /var/www/html/barrier/wp-content/themes/barrierthemenew/templates/home.php:38
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/barrierthemenew/templates/home.php on line 38
+
+2023-01-16T14:01:31+00:00 CRITICAL Uncaught Error: Call to undefined function get_wp_term_image() in /var/www/html/barrier/wp-content/themes/barrierthemenew/templates/home.php:38
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/barrierthemenew/templates/home.php on line 38
+
+2023-01-16T14:02:24+00:00 CRITICAL Uncaught Error: Call to undefined function get_wp_term_image() in /var/www/html/barrier/wp-content/themes/barrierthemenew/templates/home.php:39
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/barrierthemenew/templates/home.php on line 39
+
+2023-01-16T14:02:29+00:00 CRITICAL Uncaught Error: Call to undefined function get_wp_term_image() in /var/www/html/barrier/wp-content/themes/barrierthemenew/templates/home.php:39
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/barrierthemenew/templates/home.php on line 39
+
+2023-01-16T14:02:44+00:00 CRITICAL Uncaught Error: Call to undefined function get_wp_term_image() in /var/www/html/barrier/wp-content/themes/barrierthemenew/templates/home.php:39
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/barrierthemenew/templates/home.php on line 39
+
+2023-01-16T14:03:04+00:00 CRITICAL Uncaught Error: Call to undefined function get_wp_term_image() in /var/www/html/barrier/wp-content/themes/barrierthemenew/templates/home.php:51
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/barrierthemenew/templates/home.php on line 51
+
