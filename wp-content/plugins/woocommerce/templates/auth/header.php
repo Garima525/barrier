@@ -16,7 +16,6 @@
  */
 
 defined( 'ABSPATH' ) || exit;
-
 // phpcs:disable WordPress.WP.EnqueuedResources.NonEnqueuedStylesheet
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
