@@ -21,7 +21,7 @@
 </head>
 
 <body <?php echo body_class(); ?>>
-   <main>
+   <main <?php if(is_product_category()){?> class="product-page"<?php } ?>>
       <div class="main-inner"></div>
       <header>
          <div class="container">

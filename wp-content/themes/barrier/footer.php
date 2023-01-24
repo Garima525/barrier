@@ -90,7 +90,7 @@
             2">
                 <div class="col-md-12">
                     <div class="row py-2 footer">
-                        <div class="col-12 d-flex justify-content-center text-white">© 2022 International Plastics Inc. All Rights Reserved</div>
+                        <div class="col-12 d-flex justify-content-center text-white"><?php the_field('copyright', 'option'); ?></div>
                     </div>
                 </div>
             </div>
