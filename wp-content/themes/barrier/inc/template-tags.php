@@ -214,3 +214,46 @@ if ( ! function_exists( 'barrier_custom_theme_posted_by' ) ) {
 		}
 	}
 }
+
+
+if ( ! function_exists( 'barrier_custom_theme_the_posts_navigation' ) ) {
+	/**
+	 * Print the next and previous posts navigation.
+	 *
+	 * @since Twenty Twenty-One 1.0
+	 *
+	 * @return void
+	 */
+	function barrier_custom_theme_the_posts_navigation() {
+		the_posts_pagination(
+			array(
+				'before_page_number' => esc_html__( 'Page', 'twentytwentyone' ) . ' ',
+				'mid_size'           => 0,
+				'prev_text'          => sprintf(
+					'%s <span class="nav-prev-text">%s</span>',
+					is_rtl() ? barrier_custom_theme_get_icon_svg( 'ui', 'arrow_right' ) : barrier_custom_theme_get_icon_svg( 'ui', 'arrow_left' ),
+					wp_kses(
+						__( 'Newer <span class="nav-short">posts</span>', 'twentytwentyone' ),
+						array(
+							'span' => array(
+								'class' => array(),
+							),
+						)
+					)
+				),
+				'next_text'          => sprintf(
+					'<span class="nav-next-text">%s</span> %s',
+					wp_kses(
+						__( 'Older <span class="nav-short">posts</span>', 'twentytwentyone' ),
+						array(
+							'span' => array(
+								'class' => array(),
+							),
+						)
+					),
+					is_rtl() ? barrier_custom_theme_get_icon_svg( 'ui', 'arrow_left' ) : barrier_custom_theme_get_icon_svg( 'ui', 'arrow_right' )
+				),
+			)
+		);
+	}
+}

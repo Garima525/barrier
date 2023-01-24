@@ -293,7 +293,6 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 
-
 // SVG Icons class.
 require get_template_directory() . '/classes/class-barrier-custom-theme-svg-icons.php';
 
