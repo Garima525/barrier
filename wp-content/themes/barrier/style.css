@@ -146,3 +146,22 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 	padding-left: var(--wp--custom--spacing--outer);
 }
 
+
+
+/*My custom style*/
+
+a.added_to_cart{
+	background: #3169B4;
+    border-radius: 27.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    width: 95px;
+    text-align: center;
+    margin-left: 5px;
+    line-height: 30px;
+    padding: 6px 0;
+}
