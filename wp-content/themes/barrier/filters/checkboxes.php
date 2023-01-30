@@ -120,4 +120,3 @@ $args = [
         <?php endif;  ?>
     </div>
 </div>
-<?php $i++; ?>
