@@ -13,26 +13,16 @@ global $product;
 $ProductId = get_the_ID();
 
 /**
-    * Hook: woocommerce_before_single_product.
-    *
-    * @hooked woocommerce_output_all_notices - 10
-    */
-	do_action( 'woocommerce_before_single_product' );
-	$terms = get_the_terms($ProductId, 'brand');
-	foreach ($terms as $term) {
-		$term_link = get_term_link($term, 'brand');
-		$termName = $term->name;
-		if (is_wp_error($term_link))
-			continue;
-		'<a href="' . $term_link . '">' . $term->name . '</a>';
-		// $term->name;
-	}
-	if ( post_password_required() ) {
-		echo get_the_password_form(); // WPCS: XSS ok.
-		return;
-	}
-	$ProductId = get_the_ID();
-	$_product = wc_get_product( $ProductId );
+* Hook: woocommerce_before_single_product.
+*
+* @hooked woocommerce_output_all_notices - 10
+*/
+do_action( 'woocommerce_before_single_product' );
+if ( post_password_required() ) {
+	echo get_the_password_form(); // WPCS: XSS ok.
+	return;
+}
+$_product = wc_get_product( $ProductId );
 
 
 
