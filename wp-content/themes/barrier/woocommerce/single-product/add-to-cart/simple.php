@@ -24,7 +24,7 @@ if ( ! $product->is_purchasable() ) {
 	return;
 }
 do_action( 'woocommerce_before_single_product' );
-$terms = get_the_terms($ProductId, 'brand');
+/*$terms = get_the_terms($ProductId, 'brand');
 foreach ($terms as $term) {
 	$term_link = get_term_link($term, 'brand');
 	$termName = $term->name;
@@ -32,7 +32,7 @@ foreach ($terms as $term) {
 		continue;
 	'<a href="' . $term_link . '">' . $term->name . '</a>';
 	// $term->name;
-}
+}*/
 echo wc_get_stock_html( $product ); // WPCS: XSS ok.
 
 if ( $product->is_in_stock() ) : ?>
