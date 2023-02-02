@@ -161,7 +161,7 @@ if (!empty($ranges) && !empty($woocommerce)) {
                         }else{
                             $discounted_price_for_customizer = $discount_value;
                         }
-                        echo '$discounted_price_for_customizer is==>'.$discounted_price_for_customizer.' and $discount_value is'.$discount_value;
+                        // echo '$discounted_price_for_customizer is==>'.$discounted_price_for_customizer.' and $discount_value is'.$discount_value;
                         /**
                          * Discount Range
                          */
