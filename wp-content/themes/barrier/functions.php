@@ -313,6 +313,23 @@ function generateRandomString($length = 4) {
 }
 
 
+/*Show category title on product title*/
+
+function wpa89819_wc_single_product(){
+
+    $product_cats = wp_get_post_terms( get_the_ID(), 'product_cat' );
+
+    if ( $product_cats && ! is_wp_error ( $product_cats ) ){
+
+        $single_cat = array_shift( $product_cats ); ?>
+
+        <p itemprop="name" class="product_category_title"><span><?php echo $single_cat->name; ?></span></p>
+
+<?php }
+}
+add_action( 'woocommerce_single_product_summary', 'wpa89819_wc_single_product', 2 );
+
+
 // SVG Icons class.
 require get_template_directory() . '/classes/class-barrier-custom-theme-svg-icons.php';
 
