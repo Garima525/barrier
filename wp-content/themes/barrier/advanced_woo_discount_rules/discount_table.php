@@ -122,7 +122,7 @@ if (!empty($ranges) && !empty($woocommerce)) {
                         
                     <?php
                     }?>
-                    <th id="customize-bulk-table-total" class="wdr_bulk_table_td awdr-dragable" style=""><span>Total</span></th>
+                    <!-- <th id="customize-bulk-table-total" class="wdr_bulk_table_td awdr-dragable" style=""><span>Total</span></th> -->
                     <th id="customize-bulk-table-total" class="wdr_bulk_table_td awdr-dragable" style=""><span>You save</span></th>
                 </tr>
                 </thead>
@@ -207,7 +207,7 @@ if (!empty($ranges) && !empty($woocommerce)) {
                             }
                             $j++;
                         }?>
-                        <td class="wdr_bulk_table_td wdr_bulk_total  col_index_<?php echo esc_attr($j);?>" data-colindex="<?php echo esc_attr($j);?>" style=""> <?php ?> </td>
+                        <!-- <td class="wdr_bulk_table_td wdr_bulk_total  col_index_<?php echo esc_attr($j);?>" data-colindex="<?php echo esc_attr($j);?>" style=""> <?php ?> </td> -->
                         <td class="wdr_bulk_table_td wdr_bulk_total  col_index_<?php echo esc_attr($j);?>" data-colindex="<?php echo esc_attr($j);?>" style="">
                             <?php echo $discount_value; ?>
                         </td>
