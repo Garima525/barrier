@@ -33,6 +33,19 @@ endif;
 
 add_action( 'after_setup_theme', 'barrier_theme_support' );
 
+
+//Woocommerce support
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+   add_theme_support( 'woocommerce');
+}  
+
+add_action( 'after_setup_theme', 'barrier_theme_setup' );
+function barrier_theme_setup() {
+    add_theme_support( 'wc-product-gallery-slider' );
+}
+
+
 if ( ! function_exists( 'barrier_theme_styles' ) ) :
 
 	/**
