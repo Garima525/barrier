@@ -30,7 +30,7 @@ $_product = wc_get_product( $ProductId );
 <div class="woocommerce-variation-add-to-cart variations_button">
 	<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 	<div class="flexitem">
-		<span class="productId">Quantity</span>
+		<span class="productId d-none">Quantity</span>
 		<span>
 			<?php
 	do_action( 'woocommerce_before_add_to_cart_quantity' );
