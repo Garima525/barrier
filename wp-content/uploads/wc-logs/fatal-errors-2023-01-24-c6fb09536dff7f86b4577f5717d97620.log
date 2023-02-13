@@ -1,0 +1,36 @@
+2023-01-24T08:22:58+00:00 CRITICAL syntax error, unexpected 'while' (T_WHILE) in /var/www/html/barrier/wp-content/themes/barrier/front-page.php on line 156
+
+2023-01-24T09:29:50+00:00 CRITICAL Uncaught Error: Call to undefined function wp_query() in /var/www/html/barrier/wp-content/themes/barrier/taxonomy-product_cat.php:175
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/barrier/taxonomy-product_cat.php on line 175
+
+2023-01-24T09:32:11+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in /var/www/html/barrier/wp-content/themes/barrier/taxonomy-product_cat.php on line 185
+
+2023-01-24T10:29:44+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_thumbnail_uri() in /var/www/html/barrier/wp-content/themes/barrier/taxonomy-product_cat.php:230
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/barrier/taxonomy-product_cat.php on line 230
+
+2023-01-24T10:29:51+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_thumbnail_url() in /var/www/html/barrier/wp-content/themes/barrier/taxonomy-product_cat.php:230
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/barrier/taxonomy-product_cat.php on line 230
+
+2023-01-24T11:31:02+00:00 CRITICAL Uncaught Error: Call to undefined function twenty_twenty_one_the_posts_navigation() in /var/www/html/barrier/wp-content/themes/barrier/archive-product.php:29
+Stack trace:
+#0 /var/www/html/barrier/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/barrier/wp-blog-header.php(19): require_once('/var/www/html/b...')
+#2 /var/www/html/barrier/index.php(17): require('/var/www/html/b...')
+#3 {main}
+  thrown in /var/www/html/barrier/wp-content/themes/barrier/archive-product.php on line 29
+
