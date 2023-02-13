@@ -165,3 +165,150 @@ a.added_to_cart{
     line-height: 30px;
     padding: 6px 0;
 }
+
+
+
+.tax-product_cat .sort-table #sort_customizable_table{
+    display: none !important;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs::before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 0px solid #d3ced2;
+    z-index: 1;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs::before {
+    border-bottom: 0px solid !important;   
+}
+.custom-tab .border-0{
+    
+    
+    border-top:5px solid transparent!important;
+    
+}
+.custom-tab .woocommerce-tabs ul.tabs li.active {
+    color: #515151;
+    z-index: 2;
+    border-bottom-color: #3169B4!important;
+    border-bottom:5px solid #3169B4!important;
+}
+.custom-tab .woocommerce-tabs ul.tabs li::before, .custom-tab .woocommerce-tabs ul.tabs li::after{display: none;}
+.quantity{
+    display: flex;
+}
+
+.additional_information_tab{
+    border: 0px solid !important;
+}
+
+/**************************************pushplata*****************************************/
+.woocommerce div.product div.images img{display: block;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: none;
+    width: 280px;
+    margin: 0 auto;
+    height: auto;}
+
+    .woocommerce div.product .woocommerce-tabs ul.tabs li {
+        border: 1px solid #d3ced2;
+        background-color: transparent;
+        color: #515151;
+        display: inline-block;
+        position: relative;
+        z-index: 0;
+        border-radius: 4px 4px 0 0;
+        margin: 0 -5px;
+        padding: 0 1em;
+    }
+    .custom-border {
+        border-top: 7px solid #E4E4E4;
+        border-bottom: 1px solid #E4E4E4;
+        border-left: 1px solid #E4E4E4;
+        border-right: 1px solid #E4E4E4;
+        border-radius: 5px;
+        margin: -5px auto 15px;
+    }
+    .custom-border a{width:270px;display: block;margin: auto;}
+
+    .woocommerce div.product .woocommerce-tabs .panel{
+        margin: 0 0 2em;
+        padding: 25px 0px;
+    }
+    .woocommerce div.product div.images .flex-control-thumbs li img.flex-active, .woocommerce div.product div.images .flex-control-thumbs li img:hover {
+        opacity: 1;
+        border: 1px solid #E4E4E4;
+    }
+
+
+    
+    .term-bags .added_to_cart {
+        display: none !important;
+    }
+
+    .term-bags .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+        background-color: #3169B4;
+        color: #fff;
+        -webkit-font-smoothing: antialiased;
+        border-radius: 25px;
+        height: 41px;
+        border-radius: 25px;
+        padding: 0px 18px;
+          margin: 0 26px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px !important;
+            width: 152px;
+            
+        
+    }
+
+    .term-bags .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+    background-color: #fff;
+    color: #3169B4;
+    border: 1px solid #3169B4;
+    padding: 0px 18px;
+        margin: 0 26px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px !important;
+            width: 152px;
+    
+    }
+
+
+/* .term-bags .product-page .wrapper .stock-text:hover{
+    color: white !important;
+} */
+.term-bags .stock-text:hover {
+    color: white !important;
+}
+
+.term-bags .wp-element-button{
+    display: none !important;
+}
+.term-bags form{
+    display: flex !important;
+}
+
+.term-bags .qty {
+    background: #D9D9D9;
+    border-radius: 5px;
+    border: 0;
+    width: 41px !important;
+height: 41px !important;
+    /* color: white; */
+}
+.term-bags z.product-page .accordion-item .accordion-button:hover .stock-text, .product-page .accordion-item .accordion-button:focus .stock-text{color: #fff!important;}
+
+
+
+.term-bags .xoo-cp-added{
+    display: none;
+}
