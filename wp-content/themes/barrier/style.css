@@ -290,7 +290,7 @@ a.added_to_cart{
     color: white !important;
 }
 
-.term-bags .wp-element-button{
+.term-bags .quantity .wp-element-button{
     display: none !important;
 }
 .term-bags form{
