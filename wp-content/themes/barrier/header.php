@@ -23,6 +23,9 @@
 <body <?php echo body_class(); ?>>
    <main <?php if(is_product_category()){?> class="product-page"<?php } ?>>
       <div class="main-inner"></div>
+      <?php if(is_product_category()){?>
+         <div class="right-inner"></div>
+      <?php } ?>
       <header class="fixed-top">
          <div class="container">
             <nav class="navbar">
