@@ -25,7 +25,7 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
          </div>
          <div class="container-fluid mt-4">
             <div class="row p-0 offset-md-1">
-               <div class="col-md-4  d-flex align-items-center">
+               <div class="col-md-4  d-flex justify-content-center">
                   <img src="<?php echo $taxonomy_img ?>" class="img-fluid" alt="">
                </div>
                <div class="col-md-8 ps-4  d-flex align-items-center">
