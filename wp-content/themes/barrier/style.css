@@ -312,3 +312,7 @@ height: 41px !important;
 .term-bags .xoo-cp-added{
     display: none;
 }
+
+.term-bags .accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+}
