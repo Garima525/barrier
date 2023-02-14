@@ -316,3 +316,8 @@ height: 41px !important;
 .term-bags .accordion-button:not(.collapsed)::after {
     transform: rotate(180deg);
 }
+
+.term-bags .accordion-collapse {
+    transition: all 0.8s ease-in-out 0s;
+
+}
