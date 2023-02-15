@@ -212,7 +212,8 @@ a.added_to_cart{
     box-shadow: none;
     width: 280px;
     margin: 0 auto;
-    height: auto;}
+    height: auto;
+padding: 20px 0;}
 
     .woocommerce div.product .woocommerce-tabs ul.tabs li {
         border: 1px solid #d3ced2;
@@ -239,14 +240,20 @@ a.added_to_cart{
         margin: 0 0 2em;
         padding: 25px 0px;
     }
+    .woocommerce div.product div.images .flex-control-thumbs li{width:23%;margin: 0 5px;}
+    .woocommerce div.product div.images .flex-control-thumbs li img, .woocommerce div.product div.images .flex-control-thumbs li img:hover{
+        padding: 20px;
+        
+    }
     .woocommerce div.product div.images .flex-control-thumbs li img.flex-active, .woocommerce div.product div.images .flex-control-thumbs li img:hover {
         opacity: 1;
         border: 1px solid #E4E4E4;
+        
     }
 
 
     
-    .term-bags .added_to_cart {
+  .term-bags .added_to_cart {
         display: none !important;
     }
 
@@ -321,3 +328,197 @@ height: 41px !important;
     transition: all 0.8s ease-in-out 0s;
 
 }
+/* --------------------------------------------------------Detail-page----------------------------------- */
+.single-product.woocommerce .woocommerce-product-rating .star-rating {  
+    color:  #FFCB05;
+}
+
+.single-product.woocommerce .minus button{
+    background-color: none;
+}
+
+.single-product.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+    background: transparent;
+}
+.single-product .input-text{
+    border: none;
+}
+.single-product .quantity{
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;}
+
+    .single-product.woocommerce .quantity .qty {
+        width: 0.631em;
+        text-align: center;
+    }
+   
+    .single-product .input-text:focus-visible {
+        outline: none; 
+    }
+     
+
+    .single-product .productId{
+        display: none;
+    }
+    .single-product  .added_to_cart {
+        display: none !important;
+    }
+    .single-product .xoo-cp-added{
+        display: none;
+    }
+
+    .single-product.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+       
+        color: #fff;
+        -webkit-font-smoothing: antialiased;
+background: #323232;
+border-radius: 5px;
+    }
+
+    .single-product.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+        background-color:#fff;
+        color: #323232;
+        border: 1px solid #323232;
+        }
+        .single-product .wdr_bulk_table_thead tr{
+        background: #3169B4 !important;
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    
+    /* identical to box height, or 300% */
+    color: #FFFFFF;}
+    
+    .single-product.table>:not(:first-child) {
+        border-top: none !important;
+    }
+    .woocommerce-product-gallery.custom_slider .flex-viewport{border:1px solid #E4E4E4;}
+    .custom_slider .flex-control-nav{margin-top: 20px!important;display: flex;justify-content: center;}
+    /* .woocommerce-product-gallery__image{border:1px solid #000} */
+    .desc_detail_page{clear: both;background-color: #ECF5FF; margin-top: 100px;padding-top: 20px;}
+    
+    .woocommerce div.product p.price, .woocommerce div.product span.price {
+        color: #3169B4;
+        font-size: 1.25em;
+    }
+    .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+        background: transparent;
+        color: #515151;
+        z-index: 2;
+        border-bottom-color: #fff;
+        border-bottom: 4px solid #3169B4 !important;
+        border-radius: 5px;
+    }
+
+
+    
+
+
+    .related .card {
+       
+            background: #FFFFFF;
+            box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.1);
+            margin: 0 20px;
+        }
+        
+    
+
+        .related .card-body{
+            justify-content: center !important;
+            display: inline-grid;
+        
+        }
+
+
+        .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+             float: left; 
+           margin: 0 3.8% 2.992em 0; 
+            padding: 0; 
+           
+            width: 100%; 
+            margin-left: 0; 
+        }
+    
+        .product_category_title{
+            font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 52px; 
+color: #3169B4;
+
+        }
+  .entry-title{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 52px;
+        /* identical to box height, or 186% */
+        
+        
+        color: #323232;
+  }
+
+  .shipping-taxable .buyitnow{
+    display: none;
+}
+.shipping-taxable .size-woocommerce_thumbnail{
+    width: 100% !important;
+    height: 302px !important;
+}
+
+
+.shipping-taxable .add_to_cart_button{
+    
+        background-color: #3169B4 !important;
+        color: #fff !important;
+        -webkit-font-smoothing: antialiased !important;
+        border-radius: 25px !important;
+        height: 41px !important;
+        border-radius: 25px !important;
+        padding: 0px 18px !important;
+        margin: 0 26px !important;
+        font-family: 'Inter' !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        width: 152px !important;
+        
+            align-items: center;
+            display: flex !important;
+            justify-content: center;
+        
+    }
+    .product_type_variable{
+        align-items: center;
+            display: flex !important;
+            justify-content: center;
+    }
+
+    .woocommerce-Price-amount{
+        color: #3169B4 ;
+    }
+
+
+    .shipping-taxable .star-rating{
+        color: 
+        #FFCB05;
+    }
+
+    .shipping-taxable h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 52px;
+    /* identical to box height, or 186% */
+    
+    
+    color: #323232;
+    }
+
+/* --------------------------------------------------------Detail-page-end----------------------------------- */
