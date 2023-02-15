@@ -520,5 +520,11 @@ color: #3169B4;
     
     color: #323232;
     }
+    .woocommerce-product-gallery__image{
+        background: white;
+    }
 
+    .shipping-taxable .star-rating span, .star-rating span:before {
+        color: 
+        #FFCB05;}
 /* --------------------------------------------------------Detail-page-end----------------------------------- */
