@@ -21,9 +21,9 @@
 </head>
 
 <body <?php echo body_class(); ?>>
-   <main <?php if(is_product_category()){?> class="product-page"<?php } ?>>
+   <main <?php if(is_product_category() || is_product()){?> class="product-page"<?php } ?>>
       <div class="main-inner"></div>
-      <?php if(is_product_category()){?>
+      <?php if(is_product_category()  || is_product()){?>
          <div class="right-inner"></div>
       <?php } ?>
       <header class="fixed-top">
