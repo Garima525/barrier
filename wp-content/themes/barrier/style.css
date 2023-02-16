@@ -526,5 +526,5 @@ color: #3169B4;
 
     .shipping-taxable .star-rating span, .star-rating span:before {
         color: 
-        #FFCB05;}
+        #FFCB05 !important;}
 /* --------------------------------------------------------Detail-page-end----------------------------------- */
