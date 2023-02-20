@@ -528,6 +528,29 @@ color: #3169B4;
         color: 
         #FFCB05 !important;}
 
+
+        .woocommerce div.sale {
+           position: relative;
+           
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @media only screen and (max-width: 768px) {
         .filter-group li {
             padding: 0;
