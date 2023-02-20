@@ -527,4 +527,17 @@ color: #3169B4;
     .shipping-taxable .star-rating span, .star-rating span:before {
         color: 
         #FFCB05 !important;}
+
+    @media only screen and (max-width: 768px) {
+        .filter-group li {
+            padding: 0;
+            width: 50%;
+        } 
+        .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product { 
+            width: 100% !important; 
+            float: left; 
+            clear: both; 
+            margin: 0 0 2.992em; 
+        }
+    }   
 /* --------------------------------------------------------Detail-page-end----------------------------------- */
