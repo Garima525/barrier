@@ -533,15 +533,23 @@ color: #3169B4;
            position: relative;
            
         }
+        .table>:not(:first-child) {
+            border-top: none !important;
+        }
 
-
-
-
-
-
-
-
-
+        .woocommerce div.product form.cart .variations select {
+            max-width: 100%;
+            min-width: 74%;
+            display: inline-block;
+            margin-right: -3.52em;
+            height: 2;
+            padding: 12px;
+            border: 0px;
+        }
+        .woocommerce div.product form.cart .variations select:focus-visible {
+            outline: none; 
+        }
+         
 
 
 
