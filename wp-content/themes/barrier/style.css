@@ -520,6 +520,18 @@ color: #3169B4;
     
     color: #323232;
     }
+
+    .row-heading{
+        width: 670px;
+        height: 48px;
+        left: 876px;
+        top: 571px;
+        background: #3169B4 !important; 
+        border-radius: 5px 5px 0px 0px;
+        color: white;
+    }
+
+
     .woocommerce-product-gallery__image{
         background: white;
     }
@@ -549,13 +561,37 @@ color: #3169B4;
         .woocommerce div.product form.cart .variations select:focus-visible {
             outline: none; 
         }
-         
-
-
-
-
-
-
+          
+        .term-bags .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+            
+            padding: 0px 4px;
+            margin: 0 2px;
+            
+           
+           
+            font-size: 14px !important;
+            width: 185px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .single-product.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+            background-color: #fff;
+            color: #323232;
+            border: 1px solid #323232;
+            padding: 0px 4px;
+            margin: 0 2px;
+            
+           
+           
+            font-size: 14px !important;
+            width: 185px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
 
 
 
@@ -570,5 +606,16 @@ color: #3169B4;
             clear: both; 
             margin: 0 0 2.992em; 
         }
+
+        .request-button{
+            font-size: 12px;
+        }
+        .woocommerce img, .woocommerce-page img
+        , .custom-logo {
+            height: auto;
+            max-width: 78%;
+            padding: 0px 10px;
+        }
+        
     }   
 /* --------------------------------------------------------Detail-page-end----------------------------------- */
