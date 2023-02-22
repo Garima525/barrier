@@ -351,3 +351,16 @@ require get_template_directory() . '/inc/template-functions.php';
 
 // Custom template tags for the theme.
 require get_template_directory() . '/inc/template-tags.php';
+add_filter('woocommerce_checkout_fields', 'addBootstrapToCheckoutFields' );
+ function addBootstrapToCheckoutFields($fields) {
+    foreach ($fields as &$fieldset) {
+        foreach ($fieldset as &$field) {
+            // if you want to add the form-group class around the label and the input
+            $field['class'][] = 'form-group'; 
+
+            // add form-control to the actual input
+            $field['input_class'][] = 'form-control';
+        }
+    }
+    return $fields;
+}
