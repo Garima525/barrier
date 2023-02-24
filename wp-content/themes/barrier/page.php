@@ -20,7 +20,7 @@ get_header();
     	<?php while ( have_posts() ) : ?>
     	<div class="common-title aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"><h1><?php the_title(); ?></h1></div>
     	<div class="about-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-    		<div class="static-content">
+    		<div class="static-content container">
     			<!-- <img src="/build/images/others/about.jpg" alt="about image"> -->
 				<?php
 				// while ( have_posts() ) :
