@@ -184,7 +184,7 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                             <dt style="display: inline-block;">Price </dt>
                                                             <dd style="display: inline-block;margin-left: 37px;"> <?=$price?></dd>
                                                          </dl>
-                                                         <dl class="pe-3">
+                                                         <!-- <dl class="pe-3">
                                                             <dt style="display: inline-block;">Buy 1:</dt>
                                                             <dd style="display: inline-block;margin-left: 37px;"> 2 Mil</dd>
                                                          </dl>
@@ -195,7 +195,7 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                          <dl class="pe-3">
                                                             <dt style="display: inline-block;">Buy 1:</dt>
                                                             <dd style="display: inline-block;margin-left: 37px;"> 2 Mil</dd>
-                                                         </dl>
+                                                         </dl> -->
                                                       </div>
                                                       <div class="accordian-side-btn my-2">
                                                          <div class="d-flex">
