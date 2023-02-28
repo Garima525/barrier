@@ -167,11 +167,11 @@ a.added_to_cart {
 }
 
 
-
 /* category page */
 .tax-product_cat .sort-table{
-    margin-left: -254px;
+    margin-left: -229px;
     margin-top: -20px;
+    height: 50px;
 }
 .tax-product_cat .sort-table #sort_customizable_table{
     display: block !important;
@@ -973,7 +973,7 @@ p.form_actions{
     display: flex;
     justify-content: center;
 margin-bottom:  100px;
-
+    height: 100vh;
         background: #9ab1c333;
         /* padding: 20px; */
         border-right: 1px solid #116ab133;
@@ -988,6 +988,27 @@ margin-bottom:  100px;
     flex-direction: column;
     align-items: center;
 }
+ .items {
+    font-size: 14px !important;
+    font-weight: 600;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1D3B54;
+}
+.term-bags .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    padding: 0px 4px !important;
+    margin: 0 26px !important;
+    font-size: 14px !important;
+    width: 128px !important;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 
 @media only screen and (max-width: 768px) {
     .filter-group li {
@@ -1025,11 +1046,19 @@ margin-bottom:  100px;
         margin: 0px !important;
         
     }
+   nav .custom-logo-link{
+        max-width: 227px !important;
+    }
 }
-
+.product-cards .row{margin: 0;}
 @media (max-width: 576px){
     .d-sm-block{
         display:block !important;
     }
+}
+.woocommerce img, .woocommerce-page img, .custom-logo {
+    height: auto;
+    max-width: 100%;
+    padding: 0px 10px;
 }
 /* --------------------------------------------------------Detail-page-end----------------------------------- */
