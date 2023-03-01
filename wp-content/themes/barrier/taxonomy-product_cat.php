@@ -138,24 +138,24 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                    <dt style="display: inline-block;">Stock:</dt>
                                                    <dd style="display: inline-block;margin-left: 2px;" class="stock-text"> <?=$sku?></dd>
                                                 </dl>
-                                                <dl class="pe-3">
+                                                <dl class="pe-3 d-sm-none d-md-block">
                                                    <dt style="display: inline-block;">#WxL: </dt>
                                                    <dd style="display: inline-block;"> <?=$width?>" x <?=$length?>"</dd>
                                                 </dl>
-                                                <dl class="pe-3">
+                                                <dl class="pe-3 d-sm-none d-md-block">
                                                    <dt style="display: inline-block;">Thickness:</dt>
                                                    <dd style="display: inline-block;"> <?=$height?> Mil</dd>
                                                 </dl>
-                                                <dl class="pe-3">
+                                                <dl class="pe-3 d-sm-none d-md-block">
                                                    <dt style="display: inline-block;">Color:</dt>
                                                    <dd style="display: inline-block;"> Clear</dd>
                                                 </dl>
-                                                <dl class="pe-3">
+                                                <dl class="pe-3 d-sm-none d-md-block">
                                                    <dt style="display: inline-block;">Qty/Roll:</dt>
                                                    <dd style="display: inline-block;"> 300 / Roll</dd>
                                                 </dl>
-                                                <dl class="pe-3">
-                                                   <dt style="display: inline-block;">Price:</dt>
+                                                <dl class="pe-3 ">
+                                                   <dt style="display: inline-block;" class="price-rate">Price:</dt>
                                                    <dd style="display: inline-block;"> As low as $<?=$price?></dd>
                                                 </dl>
                                              </div>
@@ -179,7 +179,7 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                       </div>
                                                    </div>
                                                    <div class="col-md-4">
-                                                      <div class="d-none d-sm-block">
+                                                      <div class="d-sm-none d-md-block">
                                                          <dl class="pe-3">
                                                             <dt style="display: inline-block;">Price </dt>
                                                             <dd style="display: inline-block;margin-left: 37px;"> <?=$price?></dd>

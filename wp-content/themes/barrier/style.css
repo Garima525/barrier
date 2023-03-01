@@ -1011,10 +1011,50 @@ margin-bottom:  100px;
 
 
 @media only screen and (max-width: 768px) {
+    .product-page .wrapper dl, dt, ol, ul {
+        margin: 0px 3px 0px 0px !important;
+        
+    }
+    .table-data{
+width: 100% !important;
+    }
+    .table-data .pe-3{
+        width: 50% !important;
+            }
+    .price-rate{
+        margin-left: 20px!important;
+    }
+    .product-page .right-inner {
+       display: none !important;
+    }
+    .tax-product_cat .sort-table {
+        margin-left: 0px !important;
+       
+    }
+    .widget-area .widget a.wpc-open-close-filters-button a.wpc-open-close-filters-button, .wpc-open-close-filters-button, body a.wpc-filters-open-widget, a.wpc-filters-open-widget, .wpc-filters-open-widget {
+        display: inline-block;
+        text-align: left;
+        border: none !important;
+        border-radius: 20px !important;
+        line-height: 1.5;
+        padding: 10px 12px 7px 12px;
+        background-color: #c9b17138 !important;
+        color: #2c2d33;
+        box-sizing: border-box;
+        text-decoration: none !important;
+        font-weight: normal;
+        margin: 16px 0;
+        transition: none;
+        position: absolute !important;
+           left: 63%;
+            top: -62px !important;
+        
+    }
     .filter-group li {
         padding: 0;
         width: 50%;
     }
+
 
     .woocommerce ul.products[class*=columns-] li.product,
     .woocommerce-page ul.products[class*=columns-] li.product {
@@ -1049,6 +1089,25 @@ margin-bottom:  100px;
    nav .custom-logo-link{
         max-width: 227px !important;
     }
+    .tax-product_cat .sort-table #sort_customizable_table {
+        display: none !important;
+        
+    }
+    .tax-product_cat form.cart {
+        margin-top: 0px;
+    }
+    .accordion-button .d-sm-none{
+        display: none;
+        justify-content: space-around;
+    }
+    .accordion-body .d-sm-none{
+        display: none;
+        justify-content: space-around;
+    }
+  
+}
+.term-bags .row{
+    margin: 0;
 }
 .product-cards .row{margin: 0;}
 @media (max-width: 576px){
