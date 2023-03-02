@@ -85,7 +85,7 @@ if (!empty($ranges) && !empty($woocommerce)) {
             );
             asort($table_sort_by_columns); ?>
             <div class="awdr-bulk-customizable-table sort-table">
-            <table id="sort_customizable_table" class="wdr_bulk_table_msg sar-table d-sm-none d-md-block table table-hover">
+            <table id="sort_customizable_table" class="wdr_bulk_table_msg sar-table table table-hover">
                 <thead class="wdr_bulk_table_thead">
                 <tr class="wdr_bulk_table_tr wdr_bulk_table_thead" style="<?php echo (!$base::$config->getConfig('table_column_header', 1) ? 'display:none' : '')?>">
                     <?php foreach ($table_sort_by_columns as $column => $order) {
