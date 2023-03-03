@@ -1013,6 +1013,23 @@ margin-bottom:  100px;
 }
 
 @media only screen and (max-width: 768px) {
+
+    .wrapper dt,
+    dd{
+        font-size: 12px !important;
+    }
+    .combine-product {
+       
+        display: flex;
+        justify-content: center;
+    }
+    .type-product{
+        margin-top: 30px !important;
+        }
+    .woocommerce .woocommerce-breadcrumb {
+        margin: 18px 21px 1em !important;
+      
+    }
     .product-page .wrapper dl, dt, ol, ul {
         margin: 0px 3px 0px 0px !important;
         
@@ -1111,7 +1128,10 @@ width: 100% !important;
 .term-bags .row{
     margin: 0;
 }
+
 .product-cards .row{margin: 0;}
+
+.single-product .row{margin: 0;}
 @media (max-width: 576px){
     .d-sm-block{
         display:block !important;
@@ -1122,4 +1142,9 @@ width: 100% !important;
     max-width: 100%;
     padding: 0px 10px;
 }
+
+@media only screen and (max-width: 768px) {
+.product-cards .pb-5 {
+    padding-bottom: 0rem!important;
+}}
 /* --------------------------------------------------------Detail-page-end----------------------------------- */
