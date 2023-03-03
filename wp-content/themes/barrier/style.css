@@ -998,6 +998,9 @@ margin-bottom:  100px;
     line-height: 17px;
     color: #1D3B54;
 }
+.product-template-default .row{
+    margin: 0;
+}
 .term-bags .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
     padding: 0px 4px !important;
     margin: 0 26px !important;
@@ -1008,7 +1011,6 @@ margin-bottom:  100px;
     align-items: center;
     display: flex;
 }
-
 
 @media only screen and (max-width: 768px) {
     .product-page .wrapper dl, dt, ol, ul {
