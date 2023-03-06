@@ -1194,7 +1194,7 @@ width: 100% !important;
     top: 104px !important;
     z-index: -13;
 }
-.theme-barrier .woocommerce-cart-form{
+.theme-barrier .woocommerce-cart-form__contents{
     background-color: white;
 }
 
