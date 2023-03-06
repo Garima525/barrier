@@ -1178,6 +1178,26 @@ width: 100% !important;
     margin: 0;
 }
 
+.theme-barrier .main-inner {
+
+    background-repeat: no-repeat, repeat;
+    opacity: 0.4;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 104px !important;
+    background-repeat: no-repeat, repeat;
+    opacity: 0.5 !important;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 104px !important;
+    z-index: -13;
+}
+.theme-barrier .woocommerce-cart-form{
+    background-color: white;
+}
+
 .product-cards .row{margin: 0;}
 
 .single-product .row{margin: 0;}
