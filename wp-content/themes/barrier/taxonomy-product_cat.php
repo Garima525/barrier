@@ -125,6 +125,7 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                               $width = get_post_meta( get_the_ID(), '_width', true );
                               $height = get_post_meta( get_the_ID(), '_height', true );
                               $sku = get_post_meta( get_the_ID(), '_sku', true );
+                              $qty = get_post_meta( $post->ID, '_stock', true );
                               ?>
 
                               <div class="wrapper">
@@ -138,21 +139,38 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                    <dt style="display: inline-block;">Stock:</dt>
                                                    <dd style="display: inline-block;margin-left: 2px;" class="stock-text"> <?=$sku?></dd>
                                                 </dl>
-                                                <dl class="pe-3 d-sm-none d-md-block">
+                                                <?php if($width && $height){?>
+                                                <dl class="pe-3">
                                                    <dt style="display: inline-block;">#WxL: </dt>
                                                    <dd style="display: inline-block;"> <?=$width?>" x <?=$length?>"</dd>
                                                 </dl>
+                                                 <?php }else{?>
+                                                   <dl class="pe-3">
+                                                   <dt style="display: inline-block;">Cpacity: </dt>
+                                                   <dd style="display: inline-block;"> <?= get_field('capacity');  ?></dd>
+                                                </dl>
+                                                 <?php }?>
                                                 <dl class="pe-3 d-sm-none d-md-block">
                                                    <dt style="display: inline-block;">Thickness:</dt>
                                                    <dd style="display: inline-block;"> <?=$height?> Mil</dd>
                                                 </dl>
-                                                <dl class="pe-3 d-sm-none d-md-block">
-                                                   <dt style="display: inline-block;">Color:</dt>
-                                                   <dd style="display: inline-block;"> Clear</dd>
+                                                <?php 
+                                                $color =get_field('color');
+                                                $feature = get_field('feature');
+                                                if($color && $feature){?>
+                                                <dl class="pe-3">
+                                                   <dt style="display: inline-block;">Color/Feature:</dt>
+                                                   <dd style="display: inline-block;"><?=$color?>/<?=$feature?></dd>
                                                 </dl>
+                                                <?php }else{?>
+                                                <dl class="pe-3">
+                                                   <dt style="display: inline-block;">Color/Feature:</dt>
+                                                   <dd style="display: inline-block;">Clear</dd>
+                                                </dl>
+                                                <?php }?>
                                                 <dl class="pe-3 d-sm-none d-md-block">
-                                                   <dt style="display: inline-block;">Qty/Roll:</dt>
-                                                   <dd style="display: inline-block;"> 300 / Roll</dd>
+                                                   <dt style="display: inline-block;">Qty/Case:</dt>
+                                                   <dd style="display: inline-block;"> <?=$qty  ?>/ Case</dd>
                                                 </dl>
                                                 <dl class="pe-3 ">
                                                    <dt style="display: inline-block;" class="price-rate">Price:</dt>
