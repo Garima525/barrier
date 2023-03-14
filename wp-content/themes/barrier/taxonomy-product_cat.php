@@ -146,10 +146,6 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                    <dt style="display: inline-block;">#WxL: </dt>
                                                    <dd style="display: inline-block;"> <?=$width?>" x <?=$length?>"</dd>
                                                 </dl>
-                                                <dl class="pe-3">
-                                                   <dt style="display: inline-block;">Cpacity: </dt>
-                                                   <dd style="display: inline-block;"> <?= get_field('capacity');  ?></dd>
-                                                </dl>
                                                  <?php }else{?>
                                                    <dl class="pe-3">
                                                    <dt style="display: inline-block;">Cpacity: </dt>
