@@ -143,7 +143,7 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                    <dt style="display: inline-block;">Stock:</dt>
                                                    <dd style="display: inline-block;margin-left: 2px;" class="stock-text"> <?=$sku?></dd>
                                                 </dl>
-                                                <?php if($width && $height){?>
+                                                <?php if($width && $length){?>
                                                 <dl class="pe-3">
                                                    <dt style="display: inline-block;">#WxL: </dt>
                                                    <dd style="display: inline-block;"> <?=$width?>" x <?=$length?>"</dd>
