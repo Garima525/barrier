@@ -197,7 +197,7 @@ if (!empty($ranges) && !empty($woocommerce)) {
                             <td class="wdr_bulk_table_td wdr_bulk_table_discount  col_index_<?php echo esc_attr($j);?>" data-colindex="<?php echo esc_attr($j);?>"
                                 style="<?php echo (!$base::$config->getConfig('table_discount_column', 0)) ? 'display:none' : '';?>">
                                 <span class="wdr_table_discounted_value" style="<?php echo ( !$base::$config->getConfig('table_discount_column_value', 0)) ? 'display: none' : '';?>"><?php echo $discount_value; ?></span>
-                                <span class="wdr_table_discounted_price" style="<?php echo ( $base::$config->getConfig('table_discount_column_value', 0)) ? 'display: none' : '';?>"><?php echo $discounted_price_for_customizer; ?></span>
+                                <span class="wdr_table_discounted_price" style="<?php echo ( $base::$config->getConfig('table_discount_column_value', 0)) ? 'display: none' : '';?>"><?php echo $discounted_price_for_customizer.' / Cases'; ?></span>
                                 </td>
                             <?php
                             } else {?>
