@@ -159,14 +159,21 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                    <dd style="display: inline-block;"> <?=$thickness?> Mil</dd>
                                                 </dl>
                                                 <?php $feature = get_field('feature');
-                                                if($feature){?>
+                                                if($feature || $color){?>
                                                 <dl class="pe-3">
                                                    <dt style="display: inline-block;">Color/Feature:</dt>
-                                                   <dd style="display: inline-block;"><?=$color?>/<?=$feature?></dd>
+                                                   <dd style="display: inline-block;"><?=$color?>
+                                                   <?php if($feature){?>  
+                                                   /<?=$feature?>
+                                                   <?php }else{?>
+                                                   <?=$feature?>
+                                                   <?php }?>
+                                                   </dd>
                                                 </dl>
                                                 <?php }else{?>
-                                                   <dt style="display: inline-block;">Color/Feature:</dt>
-                                                   <dd style="display: inline-block;"><?=$color?></dd>
+                                                <dl class="pe-3">
+                                                   <dt style="display: inline-block;">Cpacity: </dt>
+                                                   <dd style="display: inline-block;"> <?= get_field('capacity');  ?></dd>
                                                 </dl>
                                                  <?php }?>
                                                 <dl class="pe-3 d-sm-none d-md-block">
