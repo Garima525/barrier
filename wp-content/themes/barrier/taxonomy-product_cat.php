@@ -128,6 +128,8 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                               $height = get_post_meta( get_the_ID(), '_height', true );
                               $sku = get_post_meta( get_the_ID(), '_sku', true );
                               $qty = get_post_meta( $post->ID, '_stock', true );
+                              $color = $product->get_attribute( 'pa_color' );
+                              $thickness = $product->get_attribute( 'pa_thickness' );
                               ?>
 
                               <div class="wrapper">
@@ -141,7 +143,7 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                    <dt style="display: inline-block;">Stock:</dt>
                                                    <dd style="display: inline-block;margin-left: 2px;" class="stock-text"> <?=$sku?></dd>
                                                 </dl>
-                                                <?php if($width && $height){?>
+                                                <?php if($width && $length){?>
                                                 <dl class="pe-3">
                                                    <dt style="display: inline-block;">#WxL: </dt>
                                                    <dd style="display: inline-block;"> <?=$width?>" x <?=$length?>"</dd>
@@ -154,22 +156,19 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                  <?php }?>
                                                 <dl class="pe-3 d-sm-none d-md-block">
                                                    <dt style="display: inline-block;">Thickness:</dt>
-                                                   <dd style="display: inline-block;"> <?=$height?> Mil</dd>
+                                                   <dd style="display: inline-block;"> <?=$thickness?> Mil</dd>
                                                 </dl>
-                                                <?php 
-                                                $color =get_field('color');
-                                                $feature = get_field('feature');
-                                                if($color && $feature){?>
+                                                <?php $feature = get_field('feature');
+                                                if($feature){?>
                                                 <dl class="pe-3">
                                                    <dt style="display: inline-block;">Color/Feature:</dt>
                                                    <dd style="display: inline-block;"><?=$color?>/<?=$feature?></dd>
                                                 </dl>
                                                 <?php }else{?>
-                                                <dl class="pe-3">
                                                    <dt style="display: inline-block;">Color/Feature:</dt>
-                                                   <dd style="display: inline-block;">Clear</dd>
+                                                   <dd style="display: inline-block;"><?=$color?></dd>
                                                 </dl>
-                                                <?php }?>
+                                                 <?php }?>
                                                 <dl class="pe-3 d-sm-none d-md-block">
                                                    <dt style="display: inline-block;">Qty/Case:</dt>
                                                    <dd style="display: inline-block;"> <?=$qty  ?>/ Case</dd>
