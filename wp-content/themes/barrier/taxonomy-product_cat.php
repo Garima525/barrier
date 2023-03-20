@@ -131,6 +131,12 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                               $qty = get_post_meta( $post->ID, '_stock', true );
                               $color = $product->get_attribute( 'pa_color' );
                               $thickness = $product->get_attribute( 'pa_thickness' );
+
+                              $pallet_fit_width = get_field('pallet_fit_width'); 
+                              $pallet_fit_length = get_field('pallet_fit_length');
+                              $pallet_fit_height = get_field('pallet_fit_height');
+                              $feature = get_field('feature');
+                              $capacity = get_field('capacity'); 
                               ?>
 
                               <div class="wrapper">
@@ -144,6 +150,7 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                    <dt style="display: inline-block;">Stock:</dt>
                                                    <dd style="display: inline-block;margin-left: 2px;" class="stock-text"> <?=$sku?></dd>
                                                 </dl>
+
                                                 <?php if($width && $length){?>
                                                 <dl class="pe-3">
                                                    <dt style="display: inline-block;"><?php if($height){?> #WxLxH:
@@ -156,33 +163,43 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                  <?php }else{?>
                                                    <dl class="pe-3">
                                                    <dt style="display: inline-block;">Cpacity: </dt>
-                                                   <dd style="display: inline-block;"> <?= get_field('capacity');  ?></dd>
+                                                   <dd style="display: inline-block;"> <?=$capacity?></dd>
                                                 </dl>
                                                  <?php }?>
+
                                                 <dl class="pe-3 d-sm-none d-md-block">
                                                    <dt style="display: inline-block;">Thickness:</dt>
                                                    <dd style="display: inline-block;"> <?=$thickness?> Mil</dd>
                                                 </dl>
-                                                <?php $feature = get_field('feature');
-                                                if($feature || $color){?>
-                                                <dl class="pe-3">
-                                                   <dt style="display: inline-block;">Color/Feature:</dt>
-                                                   <dd style="display: inline-block;"><?=$color?>
-                                                   <?php if($feature){?>  
-                                                   /<?=$feature?>
-                                                   <?php }?>
-                                                   </dd>
-                                                </dl>
-                                                <?php }else{?>
-                                                <dl class="pe-3">
-                                                   <dt style="display: inline-block;">Cpacity: </dt>
-                                                   <dd style="display: inline-block;"> <?= get_field('capacity');  ?></dd>
-                                                </dl>
+
+                                                <?php 
+                                                if($pallet_fit_width && $pallet_fit_length && $pallet_fit_height){?>
+                                                      <dl class="pe-3 d-sm-none d-md-block">
+                                                      <dt style="display: inline-block;">Pallet Fit Size:</dt>
+                                                      <dd style="display: inline-block;"> <?=$pallet_fit_width?>" x <?=$pallet_fit_length?>" x <?=$pallet_fit_height?>"</dd>
+                                                   </dl>
+
+                                                <?php }elseif($feature || $color){?>
+                                                   <dl class="pe-3">
+                                                      <dt style="display: inline-block;">Color/Feature:</dt>
+                                                      <dd style="display: inline-block;"><?=$color?>
+                                                      <?php if($feature){?>  
+                                                      /<?=$feature?>
+                                                      <?php }?>
+                                                      </dd>
+                                                   </dl>
+                                                   <?php }else{?>
+                                                   <dl class="pe-3">
+                                                      <dt style="display: inline-block;">Cpacity: </dt>
+                                                      <dd style="display: inline-block;"> <?=$capacity?></dd>
+                                                   </dl>
                                                  <?php }?>
+
                                                 <dl class="pe-3 d-sm-none d-md-block">
                                                    <dt style="display: inline-block;">Qty/Case:</dt>
                                                    <dd style="display: inline-block;"> <?=$qty  ?>/ Case</dd>
                                                 </dl>
+
                                                 <dl class="pe-3 ">
                                                    <dt style="display: inline-block;" class="price-rate">Price:</dt>
                                                    <dd style="display: inline-block;"> As low as $<?=$sale_price?></dd>
