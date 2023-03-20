@@ -313,11 +313,11 @@ a.added_to_cart {
 
 
 
-.term-bags .added_to_cart {
+.tax-product_cat .added_to_cart {
     display: none !important;
 }
 
-.term-bags .woocommerce #respond input#submit.alt,
+.tax-product_cat .woocommerce #respond input#submit.alt,
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
 .woocommerce input.button.alt {
@@ -338,7 +338,7 @@ a.added_to_cart {
 
 }
 
-.term-bags .woocommerce #respond input#submit.alt:hover,
+.tax-product_cat .woocommerce #respond input#submit.alt:hover,
 .woocommerce a.button.alt:hover,
 .woocommerce button.button.alt:hover,
 .woocommerce input.button.alt:hover {
@@ -356,22 +356,22 @@ a.added_to_cart {
 }
 
 
-/* .term-bags .product-page .wrapper .stock-text:hover{
+/* .tax-product_cat .product-page .wrapper .stock-text:hover{
     color: white !important;
 } */
-.term-bags .stock-text:hover {
+.tax-product_cat .stock-text:hover {
     color: white !important;
 }
 
-.term-bags .quantity .wp-element-button {
+.tax-product_cat .quantity .wp-element-button {
     display: none !important;
 }
 
-.term-bags form {
+.tax-product_cat form {
     display: flex !important;
 }
 
-.term-bags .qty {
+.tax-product_cat .qty {
     background: #D9D9D9;
     border-radius: 5px;
     border: 0;
@@ -380,22 +380,22 @@ a.added_to_cart {
     /* color: white; */
 }
 
-.term-bags z.product-page .accordion-item .accordion-button:hover .stock-text,
+.tax-product_cat z.product-page .accordion-item .accordion-button:hover .stock-text,
 .product-page .accordion-item .accordion-button:focus .stock-text {
     color: #fff !important;
 }
 
 
 
-.term-bags .xoo-cp-added {
+.tax-product_cat .xoo-cp-added {
     display: none;
 }
 
-.term-bags .accordion-button:not(.collapsed)::after {
+.tax-product_cat .accordion-button:not(.collapsed)::after {
     transform: rotate(180deg);
 }
 
-.term-bags .accordion-collapse {
+.tax-product_cat .accordion-collapse {
     transition: all 0.8s ease-in-out 0s;
 
 }
@@ -674,7 +674,7 @@ a.added_to_cart {
     outline: none;
 }
 
-.term-bags .woocommerce #respond input#submit.alt,
+.tax-product_cat .woocommerce #respond input#submit.alt,
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
 .woocommerce input.button.alt {
@@ -1001,7 +1001,7 @@ margin-bottom:  100px;
 .product-template-default .row{
     margin: 0;
 }
-.term-bags .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+.tax-product_cat .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
     padding: 0px 4px !important;
     margin: 0 26px !important;
     font-size: 14px !important;
@@ -1174,7 +1174,7 @@ width: 100% !important;
     }
   
 }
-.term-bags .row{
+.tax-product_cat .row{
     margin: 0;
 }
 
