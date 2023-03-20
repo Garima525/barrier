@@ -18,7 +18,7 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
             <div class="row">
                <div class="col-md-12">
                   <div class="text-a">
-                        Drum Liners / 55 Gallon Drum Liners
+                        <!-- Drum Liners / 55 Gallon Drum Liners -->
                   </div>
                </div>
             </div>
