@@ -211,7 +211,7 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                       <div class="d-sm-none d-md-block">
                                                          <dl class="pe-3">
                                                             <dt style="display: inline-block;">Price </dt>
-                                                            <dd class="price" style="display: inline-block;margin-left: 37px;"><del style="color:#ff0000;" aria-hidden="true"><span style="color:#ff0000;" class="woocommerce-Price-amount amount"> $<?=$regular_price?></span></del></dd>
+                                                            <dd class="price" style="display: inline-block;margin-left: 37px;"><del style="color:#ff0000;" aria-hidden="true"><span style="color:#ff0000;" class="woocommerce-Price-amount amount"> $<?=$regular_price?> / Case</span></del></dd>
                                                          </dl>
                                                          <!-- <dl class="pe-3">
                                                             <dt style="display: inline-block;">Buy 1:</dt>
