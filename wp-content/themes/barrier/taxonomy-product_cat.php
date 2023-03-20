@@ -122,7 +122,8 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                            $newloopcount = 1;
                            while($products->have_posts()) : $products->the_post(); 
                               $loopcount = $newloopcount.generateRandomString();
-                              $price = get_post_meta( get_the_ID(), '_price', true );
+                              $sale_price = get_post_meta( get_the_ID(), '_sale_price', true );
+                              $regular_price = get_post_meta( get_the_ID(), '_regular_price', true );
                               $length = get_post_meta( get_the_ID(), '_length', true );
                               $width = get_post_meta( get_the_ID(), '_width', true );
                               $height = get_post_meta( get_the_ID(), '_height', true );
@@ -145,8 +146,12 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                 </dl>
                                                 <?php if($width && $length){?>
                                                 <dl class="pe-3">
-                                                   <dt style="display: inline-block;">#WxL: </dt>
-                                                   <dd style="display: inline-block;"> <?=$width?>" x <?=$length?>"</dd>
+                                                   <dt style="display: inline-block;"><?php if($height){?> #WxLxH:
+                                                   <?php }else{?>
+                                                   #WxL:
+                                                   <?php }?>  </dt>
+                                                   <dd style="display: inline-block;"> <?=$width?>" x <?=$length?>" <?php if($height){?> x <?=$height?>
+                                                   <?php }?></dd>
                                                 </dl>
                                                  <?php }else{?>
                                                    <dl class="pe-3">
@@ -165,8 +170,6 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                    <dd style="display: inline-block;"><?=$color?>
                                                    <?php if($feature){?>  
                                                    /<?=$feature?>
-                                                   <?php }else{?>
-                                                   <?=$feature?>
                                                    <?php }?>
                                                    </dd>
                                                 </dl>
@@ -182,7 +185,7 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                 </dl>
                                                 <dl class="pe-3 ">
                                                    <dt style="display: inline-block;" class="price-rate">Price:</dt>
-                                                   <dd style="display: inline-block;"> As low as $<?=$price?></dd>
+                                                   <dd style="display: inline-block;"> As low as $<?=$sale_price?></dd>
                                                 </dl>
                                              </div>
                                           </button>
@@ -208,7 +211,7 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
                                                       <div class="d-sm-none d-md-block">
                                                          <dl class="pe-3">
                                                             <dt style="display: inline-block;">Price </dt>
-                                                            <dd style="display: inline-block;margin-left: 37px;"> <?=$price?></dd>
+                                                            <dd class="price" style="display: inline-block;margin-left: 37px;"><del style="color:#ff0000;" aria-hidden="true"><span style="color:#ff0000;" class="woocommerce-Price-amount amount"> $<?=$regular_price?></span></del></dd>
                                                          </dl>
                                                          <!-- <dl class="pe-3">
                                                             <dt style="display: inline-block;">Buy 1:</dt>
