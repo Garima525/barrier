@@ -1051,5 +1051,7 @@ ul {
     font-size: 18px;
     color: #323232;
 }
-
+.product-cards .row .card.we-offers{
+    border: 0.5px solid #3169B4 !important;
+}
 /*  */
