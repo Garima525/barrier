@@ -1044,5 +1044,12 @@ ul {
     border-radius: 5px solid transparent;
 
 }
+.product-cards .row .card-body .offers-headding{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #323232;
+}
 
 /*  */

@@ -209,7 +209,7 @@ if (!empty($ranges) && !empty($woocommerce)) {
                         }?>
                         <!-- <td class="wdr_bulk_table_td wdr_bulk_total  col_index_<?php echo esc_attr($j);?>" data-colindex="<?php echo esc_attr($j);?>" style=""> <?php ?> </td> -->
                         <td class="wdr_bulk_table_td wdr_bulk_total  col_index_<?php echo esc_attr($j);?>" data-colindex="<?php echo esc_attr($j);?>" style="">
-                            <?php echo $discount_value; ?>
+                            <?php echo number_format((float)$discount_value, 2, '.', '').' %' ; ?>
                         </td>
                     </tr>
                 <?php
