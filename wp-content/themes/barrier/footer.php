@@ -52,7 +52,7 @@
                                     <li> Interactive Catalog</li>
                                 </ul> -->
                                 <div>
-                                    <h3 class="subscribe"> Subscribe</h3>
+                                    <h3 class="subscribe p-2"> Subscribe</h3>
                                     <div class="input-group-lg input-group mb-3 ">
                                         <input type="text" class="input-box form-control" placeholder="Enter address"
                                         aria-label="Recipient's username" aria-describedby="button-addon2">
