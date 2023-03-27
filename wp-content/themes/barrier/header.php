@@ -60,26 +60,10 @@
                      ) 
                   );
                ?>
-               <!-- <ul class="article pt-4 nav-links dropdown">
-                  <li class="items item1 dropdown-toggle" data-bs-toggle="dropdown">Product Catagories<i
-                        class="fa fa-chevron-down ms-2"></i></li>
-                  <ul class="dropdown-menu">
-                     <li><a class="dropdown-item" href="#">Link 1</a></li>
-                     <li><a class="dropdown-item" href="#">Link 2</a></li>
-                     <li><a class="dropdown-item" href="#">Link 3</a></li>
-                  </ul>
-                  <li class="items">
-                     WholeSale
-                  </li>
-                  <ul class="dropdown-menu">
-                     <li><a class="dropdown-item" href="#">Link 1</a></li>
-                     <li><a class="dropdown-item" href="#">Link 2</a></li>
-                     <li><a class="dropdown-item" href="#">Link 3</a></li>
-                  </ul>
-                  <li class="items"> Custom Product </li>
-                  <li class="items">About Us </li>
-                  <li class="items">Contact Us</li>
-               </ul> -->
+               <a href="<?php echo wc_get_cart_url(); ?>" class="cart-icon">
+                  <i class="fa fa-shopping-cart"></i>
+                   <span class="pcount" id="mini-cart-count">0</span>
+               </a>
             </nav>
          </div>
       </header>

@@ -43,6 +43,7 @@ function woocommerce_support() {
 add_action( 'after_setup_theme', 'barrier_theme_setup' );
 function barrier_theme_setup() {
     add_theme_support( 'wc-product-gallery-slider' );
+    add_theme_support( 'wc-product-gallery-lightbox' );
 }
 
 
@@ -364,3 +365,17 @@ add_filter('woocommerce_checkout_fields', 'addBootstrapToCheckoutFields' );
     }
     return $fields;
 }
+
+/*----- Start to add the cart icon on header menu -----*/
+add_filter("woocommerce_add_to_cart_fragments", "wc_refresh_mini_cart_count");
+function wc_refresh_mini_cart_count($fragments)
+{
+ob_start(); ?>
+<span id="mini-cart-count" class="pcount">
+<?php echo WC()->cart->get_cart_contents_count(); ?>
+</span>
+<?php
+ $fragments[".pcount"] = ob_get_clean();
+ return $fragments;
+}
+/*-----end-----*/
