@@ -1217,3 +1217,33 @@ width: 100% !important;
     padding-bottom: 0rem!important;
 }}
 /* --------------------------------------------------------Detail-page-end----------------------------------- */
+
+div.pswp__bg{
+ opacity : 0.5 !important;
+}
+
+/* Add a shadow to the image */
+.pswp__img {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.cart-icon {
+   position: relative;
+   display: inline-block;
+   margin-left: 10px;
+}
+.pcount {
+   position: absolute;
+   top: -10px;
+   right: -10px;
+   background-color: #306082;
+   color: #fff;
+   font-size: 12px;
+   line-height: 1;
+   padding: 2px 5px;
+   border-radius: 50%;
+}
+
+.cart-icon i {
+   font-size: 20px;
+}
