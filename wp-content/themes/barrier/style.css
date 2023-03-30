@@ -1368,5 +1368,6 @@ width: 100% !important;
 .fancybox-slide--ajax, .fancybox-slide--image, .fancybox-slide--iframe {
   background-color: #fff !important;
 }
-
+/*remove horizontal scroll on mobile view */
+body, html { overflow-x:hidden; }
 

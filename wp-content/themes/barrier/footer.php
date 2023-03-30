@@ -103,6 +103,22 @@
    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
 
    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js"></script>
+   <script type="text/javascript">
+      // Iterate over each accordion element
+      $('.accordion').each(function(index) {
+            // Find the corresponding discount table inside the accordion
+            var table = $(this).find('[id^=sort_customizable_table]');
+
+            // Retrieve the value of the last element in the second column of the last row
+            var value = table.find('tr:last td:nth-last-child(2) span.wdr_table_discounted_price').text();
+             // Extract the price value using a regular expression and remove any non-numeric characters (except for the decimal point)
+            var priceValue = value.match(/\d+(\.\d+)?/)[0];
+            console.log(priceValue);
+            // Find the corresponding accordion header element with class "amount_rate" and set its text to the retrieved value
+            $(this).find('.amount_rate').text('As low as $' +priceValue);
+        });
+    </script>
+
 
     <?php wp_footer(); ?>
 </body>

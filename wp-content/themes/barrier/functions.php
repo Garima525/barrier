@@ -63,6 +63,7 @@ add_filter( 'woocommerce_single_product_fancybox_options', 'modify_fancybox_opti
 function modify_fancybox_js() {
     ?>
     <script type="text/javascript">
+        if (jQuery(window).width() > 767) {
         jQuery(document).on('afterLoad.fb', function(event, instance) {
             // Show the thumbnail list on the popup
             instance.Thumbs.show();
@@ -95,7 +96,7 @@ function modify_fancybox_js() {
             // Remove the "fancybox-container-blur" class from the webpage container element
             jQuery('.product-page').removeClass('fancybox-container-blur');
         });
-
+    }
     </script>
     <?php
 }
