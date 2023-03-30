@@ -45,7 +45,61 @@ function barrier_theme_setup() {
     add_theme_support( 'wc-product-gallery-slider' );
     add_theme_support( 'wc-product-gallery-lightbox' );
 }
+function modify_fancybox_options( $options ) {
+    // Modify the "thumbs" option to show the thumbnail list on the popup
+    $options['thumbs'] = array(
+        'autoStart' => true,
+        'hideOnClose' => true,
+        'parentEl' => '.fancybox-container',
+        'axis' => 'y',
+        'selector' => '.fancybox-thumbs__list',
+        'class' => 'fancybox-thumbs fancybox-thumbs-y',
+    );
 
+    return $options;
+}
+add_filter( 'woocommerce_single_product_fancybox_options', 'modify_fancybox_options' );
+
+function modify_fancybox_js() {
+    ?>
+    <script type="text/javascript">
+        jQuery(document).on('afterLoad.fb', function(event, instance) {
+            // Show the thumbnail list on the popup
+            instance.Thumbs.show();
+
+            // Move the thumbnail gallery to the left side
+            jQuery('.fancybox-thumbs').css('left', '0');
+
+            // Add the "fancybox-container-blur" class to the webpage container element
+            jQuery('.product-page').addClass('fancybox-container-blur');
+
+            // Move the thumbnail gallery to the left side
+            jQuery('.fancybox-inner').before(jQuery('.fancybox-thumbs'));
+
+            if (jQuery('.fancybox-title').length == 0) {
+                var productTitle = '<div class="fancybox-title">' + jQuery('.product_title').text() + '</div>';
+                jQuery('.fancybox-thumbs-y').prepend(productTitle);
+            }
+            // Adjust the arrows to the right side
+            jQuery('.fancybox-navigation .fancybox-arrow--left').css('left', 'inherit');
+            jQuery('.fancybox-navigation .fancybox-arrow--right').css('right', '0');
+            // Close the popup when clicking outside
+            jQuery(document).on('click', function(event) {
+                var $target = jQuery(event.target);
+                if (!$target.closest('.fancybox-container').length && !$target.closest('.fancybox-thumbs').length) {
+                    instance.close();
+                }
+            });
+        });
+        jQuery(document).on('afterClose.fb', function(event, instance) {
+            // Remove the "fancybox-container-blur" class from the webpage container element
+            jQuery('.product-page').removeClass('fancybox-container-blur');
+        });
+
+    </script>
+    <?php
+}
+add_action( 'wp_footer', 'modify_fancybox_js', 999 );
 
 if ( ! function_exists( 'barrier_theme_styles' ) ) :
 
