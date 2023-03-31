@@ -1033,6 +1033,9 @@ margin-bottom:  100px;
 }
 
 @media only screen and (max-width: 768px) {
+    .accordion-body .container .col-md-8.col-12{
+        margin-left: 16px !important;
+    }
     .shipping-taxable .add_to_cart_button {
         
         padding: 12px 18px !important;
@@ -1204,7 +1207,16 @@ width: 100% !important;
 @media (max-width: 576px){
     .d-sm-block{
         display:block !important;
+    }   
+    .accordion-body .container .col-md-8.col-12{
+        margin-left: 16px !important;
     }
+}
+@media (max-width: 380px){
+    .accordion-body .container .col-md-8.col-12{
+        margin-left: 0px !important;
+    }
+    
 }
 .woocommerce img, .woocommerce-page img, .custom-logo {
     height: auto;
