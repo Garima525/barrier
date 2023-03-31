@@ -202,7 +202,7 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
 
                                                 <dl class="pe-3 ">
                                                    <dt style="display: inline-block;" class="price-rate">Price:</dt>
-                                                   <dd style="display: inline-block;"> As low as $<?=$sale_price?></dd>
+                                                   <dd style="display: inline-block;"> As low as $</dd>
                                                 </dl>
                                              </div>
                                           </button>
