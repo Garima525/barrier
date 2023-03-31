@@ -78,11 +78,16 @@
             <!-- <a href="/" class="logo article">
                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" class="img-fluid">
             </a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-               aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
-            </button>
-
+            <div class="navbar-with-cart">
+               <a href="<?php echo wc_get_cart_url(); ?>" class="cart-icon" style=""> 
+                     <i class="fa fa-shopping-cart"></i>
+                      <span class="pcount" id="mini-cart-count">0</span>
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                  aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+               </button>
+            </div>
             <?php
                wp_nav_menu( 
                   array( 

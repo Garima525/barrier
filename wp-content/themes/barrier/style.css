@@ -175,7 +175,7 @@ a.added_to_cart {
 }
 .tax-product_cat .sort-table #sort_customizable_table{
     display: block !important;
-    width: 130% !important;
+    width: 130%;
     font-size: 14px;
     margin-top: 5px;
 }
@@ -200,7 +200,7 @@ a.added_to_cart {
     margin-top: 75px;
 }
 .tax-product_cat .sort-table #sort_customizable_table td.wdr_bulk_table_td.wdr_bulk_table_discount.col_index_3{
-    padding-left: 1.4rem !important; 
+    padding-left: 1.4rem; 
 }
 .tax-product_cat .sort-table #sort_customizable_table td{
     padding: 0.15rem 0.5rem !important; 
@@ -1368,5 +1368,11 @@ width: 100% !important;
   background-color: #fff !important;
 }
 
-
 body, html { overflow-x:hidden; }
+@media only screen and (max-width: 768px) {
+    .fancybox-inner{
+        border: #306082;
+        border-style: solid;
+        border-width: 2px;
+    }
+}
