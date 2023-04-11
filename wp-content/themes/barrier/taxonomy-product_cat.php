@@ -12,7 +12,9 @@ get_header();
 
 $taxonomy = get_queried_object();
 $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
- ?>
+$taxonomy_title = $taxonomy->name ;
+if($taxonomy_title != 'BAGS'){
+?>
     <section class="stroke-section product-cards">
          <div class="container">
             <div class="row">
@@ -319,7 +321,29 @@ $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
             </div>
          </div>
       </section>
-<?php
-get_footer();
 
-?>
+ <?php }else{ ?>
+
+
+<div class="bags-template">
+  <h2>Recent Posts</h2>
+  <?php
+  $args = array(
+    'post_type' => 'page',
+    'p' => 351
+  );
+  $query = new WP_Query( $args );
+  if ( $query->have_posts() ) :
+    while ( $query->have_posts() ) : $query->the_post(); ?>
+      <div class="bags">
+         <?php $page = get_template_part( 'templates/about-us' );
+         echo $page; ?>
+      </div>
+    <?php endwhile;
+    wp_reset_postdata();
+  endif; ?>
+</div>
+
+<?php } ?>
+
+<?php get_footer(); ?>
