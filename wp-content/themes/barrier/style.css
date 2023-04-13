@@ -1391,3 +1391,13 @@ body, html { overflow-x:hidden; }
 .accordion-button:hover .stock-text{
     color: #fff !important;
 }
+.page-id-219 .common-title h1{
+    display: none !important; 
+}
+.page-id-219 .static-content{
+    margin-bottom: 60px;
+}
+
+.page-id-246 .wpcf7-form {
+    margin: 20px 0px 50px 0px;
+}
