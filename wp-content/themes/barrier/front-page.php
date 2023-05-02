@@ -32,7 +32,7 @@
 						<div class="col-lg-4 <?php if($i <= 3){?>pb-5<?php } ?>">
 							<div class="card h-100 py-3">
 								<div class="card-body">
-									<img src="<?=$taxonomy_img?>" class="img-fluid product-img">
+									<a href="<?php echo esc_url( get_term_link($term) ); ?>"><img src="<?=$taxonomy_img?>" class="img-fluid product-img"></a>
 									<a href="<?php echo esc_url( get_term_link($term) ); ?>"><h6 class="d-flex justify-content-center  pt-4"><?=$term->name?></h6></a>
 								</div>
 							</div>
