@@ -1,8 +1,10 @@
-<?php get_header(); ?>
+<?php get_header(); 
+$siteurl = get_site_url();
+?>
 <section class="product-cards">
 		<div class="container">
 			<div class="row align-items-center">
-			   <div class="col-md-8 mt-5 order-2 order-md-1">
+			   <div class="col-md-8 order-2 order-md-1">
 			      	<h4><?php the_field('brief_title'); ?></h4>
 			      	<?php the_field('brief_description'); ?>
 			   </div>
@@ -49,7 +51,7 @@
 			<div class="row py-3">
 			   <div class="d-flex justify-content-center">
 			      <div class="pe-4 pt-1 text-sample"><?php the_field('req_title'); ?></div>
-			      <button type="button" class="btn request-button"><?php the_field('req_link_text'); ?></button>
+			      <a href="<?php echo $siteurl.'/contact-us'; ?>"><button type="button" class="btn request-button"><?php the_field('req_link_text'); ?></button></a>
 			   </div>
 			</div>
 		</div>
