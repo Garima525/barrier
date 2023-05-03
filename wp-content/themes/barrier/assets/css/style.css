@@ -33,6 +33,10 @@ h6 {
 } */
 .yellow {
     color: var(--yellow);
+
+}
+.yellow.ship{
+    font-size: 30px;
 }
 
 p {
@@ -178,7 +182,7 @@ header a {
 .product-cards h6 {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     /* identical to box height, or 239% */
     color: #323232;
@@ -564,7 +568,7 @@ footer {
 }
 
 li.items {
-    padding: 0px 20px !important;
+    padding: 0px 15px !important;
 }
 
 .items {
@@ -1083,4 +1087,7 @@ ul {
     #sort_customizable_table .wdr_bulk_table_td.wdr_bulk_table_discount.col_index_3{
         padding-left:  0px;
     }
+}
+.order-2 p{
+    margin-bottom: 0px !important;
 }
