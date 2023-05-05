@@ -6,7 +6,7 @@ $headers = "From: chauhangarima525@gmail.com" . "\r\n" .
            "Reply-To: chauhangarima525@gmail.com" . "\r\n" .
            "X-Mailer: PHP/" . phpversion();
 
-if (mail($to, $subject, $message, $headers)) {
+if (wp_mail($to, $subject, $message, $headers)) {
     echo "Email sent successfully.";
 } else {
     echo "Email failed to send.";
