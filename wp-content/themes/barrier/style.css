@@ -1401,3 +1401,6 @@ body, html { overflow-x:hidden; }
 .page-id-246 .wpcf7-form {
     margin: 20px 0px 50px 0px;
 }
+.shop_table .woocommerce-cart-form__cart-item .product-thumbnail img{
+    width: 60px;
+}
