@@ -437,6 +437,6 @@ ob_start(); ?>
 /*----- Start to add the Retun to shop button on cart page -----*/
 add_action( 'woocommerce_cart_actions', 'return_to_shop_button' );
 function return_to_shop_button() {
-    echo '<a class="button" href="' . esc_url( wc_get_page_permalink( 'shop' ) ) . '">' . __( 'Return to Shop', 'woocommerce' ) . '</a>';
+    echo '<a class="button" href="' . site_url( 'shop' ) . '">' . __( 'Return to Shop', 'woocommerce' ) . '</a>';
 }
 /*-----end-----*/
