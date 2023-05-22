@@ -601,7 +601,12 @@ li.items {
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: .25rem;
 }
-
+#menu-item-426 .dropdown-menu[data-bs-popper]{
+    top: 100%;
+    right: 0;
+    left: 80%;
+    margin-top: 1.125rem;
+}
 @media screen and (min-width: 807px) {
     #myTopnav {
         display: none;
