@@ -1444,3 +1444,10 @@ body, html { overflow-x:hidden; }
 .rmagic .buttonarea{
     margin: 0px 0 0px 0 !important;
 }
+.rmagic .rmrow .rminput ul li label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #464646;
+}
