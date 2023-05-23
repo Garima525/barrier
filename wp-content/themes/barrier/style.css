@@ -1429,6 +1429,15 @@ body, html { overflow-x:hidden; }
     transition: 0.2s;
     box-shadow: 0 0 1px 1px rgba(255,255,255,0.25);
 }
+#rm_login_form_1 .rmrow .rmfield label{
+    display: block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #464646;
+    line-height: 30px !important;
+}
 .rmagic .rmrow {
     padding: 0px 0px 0px 0px !important;
 }
