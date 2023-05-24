@@ -37,7 +37,7 @@ if($taxonomy_title != 'BAGS'){
                         <p class="product-text"><?php echo $taxonomy->description; ?></p>
                         <h3 class="m-0"><?php the_field('category_title_copy',$taxonomy); ?></h3>
                         <?php the_field('features',$taxonomy); ?>
-                        <!-- <div class="mt-4"> <button type="button" class="product-button px-5 btn btn-outline-primary">See all Drum Liners</button></div> -->
+                        <div class="mt-4"> <a href="#all-products" class="product-button px-5 btn btn-outline-primary">See all Drum Liners</a></div>
                      </div>
                      <div class="col-md-4">
                      </div>
@@ -46,7 +46,7 @@ if($taxonomy_title != 'BAGS'){
             </div>
          </div>
       </section>
-      <section class="wrapper  mt-5">
+      <section class="wrapper mt-5" id="all-products">
          <div class="container">
 
             <div class="col-md-12 row">
