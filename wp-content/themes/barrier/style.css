@@ -1404,3 +1404,59 @@ body, html { overflow-x:hidden; }
 .shop_table .woocommerce-cart-form__cart-item .product-thumbnail img{
     width: 60px;
 }
+.rmagic{
+    display: grid;
+    place-items: center;
+}
+.rmcontent{
+    padding: 46px !important;
+    margin: 2em !important;
+    width: 655px !important;
+    box-shadow: 0px 0px 8px 5px rgb(42 41 41 / 22%);
+}
+.rmagic .buttonarea input[type='button']:hover, .rmagic .buttonarea input[type='submit']:hover{
+    background-color: #146db1;
+}
+.rmagic .buttonarea input[type='button'], .rmagic .buttonarea input[type='submit'] {
+    background-color: #146db1;
+    border: 1px solid #146db1;
+    color: #fff;
+    color: rgba(255,255,255,1);
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 0 1px 1px rgba(255,255,255,0.25);
+}
+#rm_login_form_1 .rmrow .rmfield label{
+    display: block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #464646;
+    line-height: 30px !important;
+}
+.rmagic .rmrow {
+    padding: 0px 0px 0px 0px !important;
+}
+.rmagic .buttonarea{
+    margin: 0px 0 0px 0 !important;
+}
+.rmagic .rmrow .rminput ul li label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #464646;
+}
+.page-id-477 .content-area{
+    padding: 150px 100px 20px 100px !important;
+}
+.page-id-477 .wps-rma-form__wrapper{
+    margin: 30px 0px;
+}
+.page-id-477 .woocommerce-breadcrumb a{
+    color: #3169B4;
+}
