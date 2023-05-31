@@ -1451,34 +1451,15 @@ body, html { overflow-x:hidden; }
     font-size: 18px;
     color: #464646;
 }
-.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .button {
-    font-size: 100%;
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .button {  
     margin: 10px 12px 10px -6px !important;
-    line-height: 1;
-    cursor: pointer;
-    position: relative;
-    text-decoration: none;
-    overflow: visible;
     padding: .618em 0.8em !important;
-    border-radius: 3px;
-    left: auto;
-    color: #fff;
-    background-color: #3169B4 !important;
-    border: 0;
-    display: inline-block;
-    background-image: none;
-    box-shadow: none;
-    text-shadow: none;
+   
 }
 .page-id-477 .content-area{
-    padding: 150px 100px 20px 100px;
+    padding: 150px 100px 20px 100px !important;
 }
-.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .button:hover {
-    background-color: #3169B4 !important;
-    text-decoration: none;
-    background-image: none;
-    color: #fff;
-}
+
 .wps-rma-form__wrapper{
     margin: 30px 0px;
 }
