@@ -1451,18 +1451,12 @@ body, html { overflow-x:hidden; }
     font-size: 18px;
     color: #464646;
 }
-.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .button {  
-    margin: 10px 12px 10px -6px !important;
-    padding: .618em 0.8em !important;
-   
-}
 .page-id-477 .content-area{
     padding: 150px 100px 20px 100px !important;
 }
-
-.wps-rma-form__wrapper{
+.page-id-477 .wps-rma-form__wrapper{
     margin: 30px 0px;
 }
-.woocommerce-breadcrumb a{
+.page-id-477 .woocommerce-breadcrumb a{
     color: #3169B4;
 }
