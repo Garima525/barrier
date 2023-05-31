@@ -1470,8 +1470,8 @@ body, html { overflow-x:hidden; }
     box-shadow: none;
     text-shadow: none;
 }
-.account-content{
-    margin-top: 150px;
+.page-id-477 .content-area{
+    padding: 150px 100px 20px 100px;
 }
 .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .button:hover {
     background-color: #3169B4 !important;
