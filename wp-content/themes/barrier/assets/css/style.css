@@ -536,7 +536,7 @@ footer .fa-facebook {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 34px;
     /* or 212% */
     padding-left: 0rem;
@@ -601,7 +601,12 @@ li.items {
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: .25rem;
 }
-
+#menu-item-466 .dropdown-menu[data-bs-popper]{
+    top: 100%;
+    right: 0;
+    left: 80%;
+    margin-top: 1.125rem;
+}
 @media screen and (min-width: 807px) {
     #myTopnav {
         display: none;
