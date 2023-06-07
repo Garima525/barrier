@@ -13,11 +13,11 @@ get_header(); ?>
     <div class="container">
         <div class="row py-3">
            <div class="d-flex justify-content-center">
-              <div class="pe-4 pt-1 pb-3 text-sample">To contact our team of <span class="yellow">barrier experts</span>, please fill out below form.</div>
+              <div class="pe-4 pt-1 pb-3 text-sample"><?php get_field('contact_heading'); ?></div>
            </div>
         </div>
         <div class="d-flex justify-content-center">
-            <?php echo do_shortcode('[contact-form-7 id="245" title="Contact Us"]'); ?>
+            <?php echo do_shortcode('<?php get_field('contact_form'); ?>'); ?>
         </div>
        
     </div>
