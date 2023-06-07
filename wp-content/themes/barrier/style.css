@@ -360,7 +360,7 @@ a.added_to_cart {
     color: white !important;
 } */
 .tax-product_cat .stock-text:hover {
-    color: white !important;
+    color: #000 !important;
 }
 
 .tax-product_cat .quantity .wp-element-button {
@@ -382,7 +382,7 @@ a.added_to_cart {
 
 .tax-product_cat z.product-page .accordion-item .accordion-button:hover .stock-text,
 .product-page .accordion-item .accordion-button:focus .stock-text {
-    color: #fff !important;
+    color: #000 !important;
 }
 
 
@@ -1389,7 +1389,7 @@ body, html { overflow-x:hidden; }
     }
 }
 .accordion-button:hover .stock-text{
-    color: #fff !important;
+    color: #000 !important;
 }
 .page-id-219 .common-title h1{
     display: none !important; 
