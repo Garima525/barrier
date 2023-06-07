@@ -10,7 +10,9 @@
  */
 get_header();
 
+
 $taxonomy = get_queried_object();
+
 $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
 $taxonomy_title = $taxonomy->name ;
 if($taxonomy_title != 'BAGS'){
@@ -33,11 +35,12 @@ if($taxonomy_title != 'BAGS'){
                <div class="col-md-8 ps-4  d-flex align-items-center">
                   <div class="row">
                      <div class="col-md-10">
+
                         <?php the_field('category_title',$taxonomy); ?>
                         <p class="product-text"><?php echo $taxonomy->description; ?></p>
                         <h3 class="m-0"><?php the_field('category_title_copy',$taxonomy); ?></h3>
                         <?php the_field('features',$taxonomy); ?>
-                        <div class="mt-4"> <a href="#all-products" class="product-button px-5 btn btn-outline-primary">See all Drum Liners</a></div>
+                        <div class="mt-4"><a href="#all-products" class="product-button px-5 btn btn-outline-primary">See all Drum Liners</a></div>
                      </div>
                      <div class="col-md-4">
                      </div>
@@ -46,7 +49,7 @@ if($taxonomy_title != 'BAGS'){
             </div>
          </div>
       </section>
-      <section class="wrapper mt-5" id="all-products">
+      <section class="wrapper  mt-5" id="all-products">
          <div class="container">
 
             <div class="col-md-12 row">
@@ -58,6 +61,7 @@ if($taxonomy_title != 'BAGS'){
                   </div>
                </div>
                <div class="col-md-9 mb-3 ajax_posts">
+
                   <?php
                      $unique_terms = [];
                      $idArr = [];
@@ -101,7 +105,7 @@ if($taxonomy_title != 'BAGS'){
 
 
                      foreach($unique_terms as $key => $value){
-                        echo "<h3>".$value->name."</h3>";
+                        echo "<h3>".$value->name."</h3> <div>";
 
                         $args = array(
                                  'post_status' => 'publish',
@@ -137,12 +141,12 @@ if($taxonomy_title != 'BAGS'){
                               $pallet_fit_length = get_field('pallet_fit_length');
                               $pallet_fit_height = get_field('pallet_fit_height');
                               $feature = get_field('feature');
-                              $capacity = get_field('capacity'); 
+                              $capacity = get_field('capacity');
                               ?>
 
                               <div class="wrapper">
                                  <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item mb-2 border-0">
+                                    <div class="accordion-item border-0">
                                        <h2 class="accordion-header d-none d-sm-block" id="heading<?=$loopcount?>">
                                           <button class="accordion-button  collapsed p-2" type="button" data-bs-toggle="collapse"
                                              data-bs-target="#collapse<?=$loopcount?>" aria-expanded="true" aria-controls="collapse<?=$loopcount?>">
@@ -166,13 +170,12 @@ if($taxonomy_title != 'BAGS'){
                                                    <dt style="display: inline-block;">Cpacity: </dt>
                                                    <dd style="display: inline-block;"> <?=$capacity?></dd>
                                                 </dl>
-                                                 <?php }?>
+                                                <?php }?>
 
                                                 <dl class="pe-3 d-sm-none d-md-block">
                                                    <dt style="display: inline-block;">Thickness:</dt>
                                                    <dd style="display: inline-block;"> <?=$thickness?> Mil</dd>
                                                 </dl>
-
                                                 <?php 
                                                 if($pallet_fit_width && $pallet_fit_length && $pallet_fit_height){?>
                                                       <dl class="pe-3 d-sm-none d-md-block">
@@ -229,7 +232,8 @@ if($taxonomy_title != 'BAGS'){
                                                       <div class="d-sm-none d-md-block">
                                                          <dl class="pe-3">
                                                             <dt style="display: inline-block;">Price </dt>
-                                                            <dd class="price" style="display: inline-block;margin-left: 37px;"><del style="color:#ff0000;" aria-hidden="true"><span style="color:#ff0000;" class="woocommerce-Price-amount amount"> $<?=$regular_price?> / Case</span></del></dd>
+                                                           <!--  <p class="price"><del aria-hidden="false"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span><?=$price_reg?></bdi></span></del> </p> -->
+                                                            <dd style="display: inline-block;margin-left: 37px;" class="price"><del style="color:#ff0000;" aria-hidden="true"><span style="color:#ff0000;" class="woocommerce-Price-amount amount"> $<?=$regular_price?> / Case</span></del></dd>
                                                          </dl>
                                                          <!-- <dl class="pe-3">
                                                             <dt style="display: inline-block;">Buy 1:</dt>
@@ -282,13 +286,16 @@ if($taxonomy_title != 'BAGS'){
                                     </div>
                                  </div>
                               </div>
+
                            <?php
                            $newloopcount++;
                            endwhile;
                         endif;
-                     }
+                     echo "</div>";}
                      ?>
+
                </div>
+
             </div>
          </div>
       </section>
@@ -323,13 +330,12 @@ if($taxonomy_title != 'BAGS'){
 
  <?php }else{ ?>
 
-
 <div class="bags-template">
   <h2>Recent Posts</h2>
   <?php
   $args = array(
     'post_type' => 'page',
-    'p' => 351
+    'p' => 323
   );
   $query = new WP_Query( $args );
   if ( $query->have_posts() ) :
@@ -346,3 +352,4 @@ if($taxonomy_title != 'BAGS'){
 <?php } ?>
 
 <?php get_footer(); ?>
+
