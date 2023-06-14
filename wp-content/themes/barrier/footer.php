@@ -113,9 +113,10 @@
             var value = table.find('tr:last td:nth-last-child(2) span.wdr_table_discounted_price').text();
              // Extract the price value using a regular expression and remove any non-numeric characters (except for the decimal point)
             var priceValue = value.match(/\d+(\.\d+)?/)[0];
-            console.log(priceValue);
+            var priceText = 'As low as $' + priceValue;
+            var spanText = '<i class="accordion-button-icon"></i>';
             // Find the corresponding accordion header element with class "amount_rate" and set its text to the retrieved value
-            $(this).find('.amount_rate').text('As low as $' +priceValue);
+            $(this).find('.amount_rate').text(priceText).append(spanText);
         });
     </script>
 
