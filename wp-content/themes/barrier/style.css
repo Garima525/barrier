@@ -1247,17 +1247,17 @@ margin: 30px 0px;
 .page-id-477 .woocommerce-breadcrumb a{
 color: #3169B4;
 }
-}
+
 table#demotable {
 table-layout: fixed ;
 width: 100% ;
 border-collapse: collapse ;
 font-size: .875rem;
-/*border: 1px black solid ;*/
+background: rgba(228, 240, 255, 0.7);
+border: 1px solid #e9e9e9 !important;
 }
 table#demotable td {
 max-width: 25% ;
-/*border: 1px black solid ;*/
 padding: 10px ;
 }
 table#demotable th {
@@ -1267,7 +1267,6 @@ padding: 10px ;
 }
 table#demotablecontent td {
 max-width: 25% ;
-/*border: 1px black solid ;*/
 padding: 10px ;
 border-bottom: none;
 }
@@ -1276,15 +1275,10 @@ table-layout: fixed ;
 width: 100% ;
 border-collapse: collapse ;
 font-size: .875rem;
-/*border: 1px black solid ;*/
 }
 table#demotablecontent td.amount_rate {
 padding: 10px 0px ;
 }
 table#demotablecontent td.stock{
 padding: 10px 3px ;
-}
-table#demotable tr{
-background: rgba(228, 240, 255, 0.7);
-border: 1px solid #e9e9e9 !important;
 }
