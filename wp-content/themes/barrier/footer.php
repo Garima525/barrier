@@ -113,9 +113,10 @@
             var value = table.find('tr:last td:nth-last-child(2) span.wdr_table_discounted_price').text();
              // Extract the price value using a regular expression and remove any non-numeric characters (except for the decimal point)
             var priceValue = value.match(/\d+(\.\d+)?/)[0];
-            console.log(priceValue);
+            var priceText = 'As low as $' + priceValue;
+            var spanText = '<i class="accordion-button-icon"></i>';
             // Find the corresponding accordion header element with class "amount_rate" and set its text to the retrieved value
-            $(this).find('.amount_rate').text('As low as $' +priceValue);
+            $(this).find('.amount_rate').text(priceText).append(spanText);
         });
     </script>
 
@@ -124,3 +125,29 @@
 </body>
 
 </html>
+<script type="text/javascript">
+$(document).ready(function() {
+  // Add event listener to ZIP code input field
+  $('#calc_shipping_postcode').on('input', function() {
+    var zipCode = $(this).val();
+    // Send AJAX request to USPS ZIP Code API
+    $.ajax({
+      url: 'https://api.zippopotam.us/us/' + zipCode,
+      type: 'GET',
+      dataType: 'json',
+      success: function(data) {
+        // Extract city and state information from the response
+        var city = data.places[0]['place name'];
+        var state = data.places[0]['state abbreviation'];
+        
+        // Update city and state input fields
+        $('#calc_shipping_city').val(city);
+        $('#calc_shipping_state').val(state).trigger('change');
+      },
+      error: function() {
+        console.log('Failed to fetch city and state information.');
+      }
+    });
+  });
+});
+</script>
