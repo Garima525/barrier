@@ -815,7 +815,7 @@ background: url("../img/chevron-left-solid.svg") center center no-repeat; /* Rep
 background: url("../img/chevron-down-solid.svg") center center no-repeat; 
 width: 11px;
 height: 16px;
-margin-left: 12px;
+margin-left: 11px;
 }
 .accordion-button::after {
 display: none;
