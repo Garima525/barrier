@@ -1261,9 +1261,8 @@ max-width: 25% ;
 padding: 10px ;
 }
 table.demotable th {
-max-width: 25% ;
-/*border: 1px black solid ;*/
-padding: 10px ;
+max-width: 25% !important;
+padding: 10px !important;
 }
 table#demotablecontent td {
 max-width: 25% ;
