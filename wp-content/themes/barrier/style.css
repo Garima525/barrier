@@ -1281,3 +1281,7 @@ padding: 10px 0px ;
 table#demotablecontent td.stock{
 padding: 10px 3px ;
 }
+.hbspt-form{
+	width: 560px;
+	margin-bottom: 30px;
+}

@@ -8,14 +8,14 @@
  * @since 1.0
  */
 get_header(); 
-$field_value = get_field('contact_form');
+$field_value = get_field('ticket_form');
 $processed_value = do_shortcode($field_value);
 ?>
 <section class="product-cards">
     <div class="container">
         <div class="row py-3">
            <div class="d-flex justify-content-center">
-              <div class="pe-4 pt-1 pb-3 text-sample"><?php echo get_field('contact_heading'); ?></div>
+              <div class="pe-4 pt-1 pb-3 text-sample"><?php echo get_field('ticketform_heading'); ?></div>
            </div>
         </div>
         <div class="d-flex justify-content-center">
