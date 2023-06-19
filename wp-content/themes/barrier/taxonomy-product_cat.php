@@ -132,7 +132,7 @@
                         $pallet_fit_height = get_field('pallet_fit_height');
                         $feature = get_field('feature');
                         $capacity = get_field('capacity');?>
-            <table id='demotable'>
+            <table class="demotable">
                <thead>
                   <tr>
                      <th>Stock</th>

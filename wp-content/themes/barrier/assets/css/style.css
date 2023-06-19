@@ -524,6 +524,12 @@ background-clip: padding-box;
 border: 1px solid rgba(0, 0, 0, .15);
 border-radius: .25rem;
 }
+#menu-item-466 .dropdown-menu[data-bs-popper]{
+    top: 100%;
+    right: 0;
+    left: 80%;
+    margin-top: 1.125rem;
+}
 @media screen and (min-width: 807px) {
 #myTopnav {
 display: none;
@@ -585,9 +591,7 @@ background: #D9D9D9;
 border-radius: 5px solid transparent;
 margin: 0px -42px;
 }
-.product-page .product-button {
-max-width: ;
-}
+
 .custom-mobile-row {
 padding-top: 0px !important;
 }
@@ -596,7 +600,7 @@ padding: 0px !important;
 display: flex;
 justify-content: center;
 }
-.product-page .wrapper-partitions .accordion-body,
+.product-page .wrapper-partitions .accordion-body
 {
 padding: 0px !important;
 display: flex;
@@ -767,7 +771,6 @@ left: 775px;
 top: 550px;
 background: #3169B4;
 border-radius: 27.5px;
-color: white;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
@@ -812,7 +815,7 @@ background: url("../img/chevron-left-solid.svg") center center no-repeat; /* Rep
 background: url("../img/chevron-down-solid.svg") center center no-repeat; 
 width: 11px;
 height: 16px;
-margin-left: 12px;
+margin-left: 11px;
 }
 .accordion-button::after {
 display: none;
