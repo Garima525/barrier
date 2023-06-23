@@ -24,6 +24,7 @@ get_header();
     			<!-- <img src="/build/images/others/about.jpg" alt="about image"> -->
 				<?php
 				// while ( have_posts() ) :
+					is_page();
 					the_post();
 
 					the_post_thumbnail();
