@@ -1377,3 +1377,6 @@ input[type=submit] {
 .page-id-537 .form-row{
 	text-align: center;
 }
+.page-id-537 form.login.wps_rma_guest_form{
+	width: 40% !important;
+}
