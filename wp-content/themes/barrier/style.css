@@ -1288,7 +1288,7 @@ padding: 10px 3px ;
     text-align: center;
     font-family: 'Inter';
 }
-input {
+.wps_rma_guest_form_wrap input {
     box-sizing: border-box;
     padding: 0 15px;
     min-height: 27px;
