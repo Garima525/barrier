@@ -1288,7 +1288,7 @@ padding: 10px 3px ;
     text-align: center;
     font-family: 'Inter';
 }
-.wps_rma_guest_form_wrap input {
+.wps_rma_guest_form input {
     box-sizing: border-box;
     padding: 0 15px;
     min-height: 27px;
@@ -1374,6 +1374,6 @@ input[type=submit] {
 .wps_rma_guest_input{
     margin-bottom: 18px;
 }
-.form-row{
+.page-id-537 .form-row{
 	text-align: center;
 }
