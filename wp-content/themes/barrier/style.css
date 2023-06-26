@@ -1238,8 +1238,8 @@ font-weight: 500;
 font-size: 18px;
 color: #464646;
 }
-.page-id-477 .wps-rma-form__wrapper, {
-    padding: 160px 100px 80px 100px;
+.page-id-477 .wps-rma-form__wrapper {
+    padding: 160px 100px 80px 100px !important;
 }
 .page-id-477 .woocommerce-breadcrumb a{
 color: #3169B4;
