@@ -39,7 +39,7 @@
                   <p class="product-text"><?php echo $taxonomy->description; ?></p>
                   <h3 class="m-0"><?php the_field('category_title_copy',$taxonomy); ?></h3>
                   <?php the_field('features',$taxonomy); ?>
-                  <div class="mt-4"><a href="#all-products" class="product-button px-5 btn btn-outline-primary">See all Drum Liners</a></div>
+                  <div class="mt-4"><a href="#all-products" class="product-button px-5 btn btn-outline-primary"><?php the_field('see_all_drums_button',$taxonomy);?></a></div>
                </div>
                <div class="col-md-4">
                </div>
