@@ -22,6 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <div class="flexitem stock <?php echo esc_attr( $class ); ?>">
     <span class="productId">Availability:</span>
-    <span class="description-sec-pro"><?php echo wp_kses_post( $availability ); ?></span>
+    <span class="description-sec-pro"><?php //echo wp_kses_post( $availability ); ?></span>
 </div>
 <!--<p class="stock <?php //echo esc_attr( $class ); ?>"><?php //echo wp_kses_post( $availability ); ?></p>-->
