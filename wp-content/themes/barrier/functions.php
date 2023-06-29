@@ -440,3 +440,32 @@ function return_to_shop_button() {
     echo '<a class="button" href="' . site_url( 'shop' ) . '">' . __( 'Return to Shop', 'woocommerce' ) . '</a>';
 }
 /*-----end-----*/
+
+/**
+ * Add custom parameter to order data on checkout.
+ *
+ * @param int $order_id The order ID.
+ */
+function add_custom_order_parameter( $order_id ) {
+    $order = wc_get_order( $order_id );
+
+    // Add custom parameter to order data
+    $order->set_customer_note( 'refund=false' );
+    $order->save();
+}
+add_action( 'woocommerce_checkout_order_processed', 'add_custom_order_parameter', 10, 1 );
+
+/**
+ * Modify the order confirmation page URL to include custom parameter.
+ *
+ * @param string $url The order confirmation page URL.
+ * @param WC_Order $order The order object.
+ * @return string Modified URL.
+ */
+function modify_confirmation_page_url( $url, $order ) {
+    $refund_param = 'refund=false';
+    $separator = ( strpos( $url, '?' ) === false ) ? '?' : '&';
+    $url .= $separator . $refund_param;
+    return $url;
+}
+add_filter( 'woocommerce_get_checkout_order_received_url', 'modify_confirmation_page_url', 10, 2 );
