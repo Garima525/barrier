@@ -463,9 +463,12 @@ add_action( 'woocommerce_checkout_order_processed', 'add_custom_order_parameter'
  * @return string Modified URL.
  */
 function modify_confirmation_page_url( $url, $order ) {
-    $refund_param = 'refund=false';
-    $separator = ( strpos( $url, '?' ) === false ) ? '?' : '&';
-    $url .= $separator . $refund_param;
+    // Check if the request is for refund or exchange
+    if ( ! isset( $_GET['action'] ) || ! in_array( $_GET['action'], array( 'refunded', 'exchanged' ) ) ) {
+        $refund_param = 'refund=false';
+        $separator = ( strpos( $url, '?' ) === false ) ? '?' : '&';
+        $url .= $separator . $refund_param;
+    }
     return $url;
 }
 add_filter( 'woocommerce_get_checkout_order_received_url', 'modify_confirmation_page_url', 10, 2 );
