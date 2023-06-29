@@ -463,10 +463,20 @@ add_action( 'woocommerce_checkout_order_processed', 'add_custom_order_parameter'
  * @return string Modified URL.
  */
 function modify_confirmation_page_url( $url, $order ) {
+    $refund_param = '';
+
     // Check if the request is for refund or exchange
-    if ( isset( $_GET['action'] ) && in_array( $_GET['action'], array( 'refunded', 'exchanged' ) ) ) {
-        $refund_param = 'refund=true';
-    } else {
+    if ( isset( $_GET['order-received'] ) && isset( $_GET['key'] ) ) {
+        $order_id  = absint( $_GET['order-received'] );
+        $order_key = wc_clean( $_GET['key'] );
+
+        $order = wc_get_order( $order_id );
+        if ( $order && hash_equals( $order->get_order_key(), $order_key ) ) {
+            $refund_param = 'refund=true';
+        }
+    }
+
+    if ( empty( $refund_param ) ) {
         $refund_param = 'refund=false';
     }
 
