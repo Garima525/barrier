@@ -464,8 +464,8 @@ add_action( 'woocommerce_checkout_order_processed', 'add_custom_order_parameter'
  */
 function modify_confirmation_page_url( $url, $order ) {
     // Check if the request is for refund or exchange
-    if ( ! wc_get_notices() ) {
-        $refund_param = 'refund=false';
+    if ( isset( $_GET['action'] ) && in_array( $_GET['action'], array( 'refunded', 'exchanged' ) ) ) {
+        $refund_param = 'refund=true';
         $separator = ( strpos( $url, '?' ) === false ) ? '?' : '&';
         $url .= $separator . $refund_param;
     }
