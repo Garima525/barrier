@@ -486,3 +486,15 @@ function modify_confirmation_page_url( $url, $order ) {
     return $url;
 }
 add_filter( 'woocommerce_get_checkout_order_received_url', 'modify_confirmation_page_url', 10, 2 );
+
+function add_custom_parameter_to_order_received_url( $url, $order_id ) {
+    // Check if the request is coming from the specific form (replace 'Wps_Rma_Guest_Form' with the appropriate form class or ID)
+    if ( isset( $_POST['wps_wrma_order_id_submit'] ) && isset( $_POST['order_id'] ) && isset( $_POST['order_email'] ) ) {
+        // Add your custom parameter to the URL
+        $url = add_query_arg( 'refund', 'true', $url );
+    }else{
+        $url = add_query_arg( 'refund', 'false', $url );
+    }
+    return $url;
+}
+add_filter( 'woocommerce_get_checkout_order_received_url', 'add_custom_parameter_to_order_received_url', 10, 2 );

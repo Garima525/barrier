@@ -1369,7 +1369,6 @@ input:hover[type="submit"] {
     min-height: 50px !important;
     float: none !important;
     margin: 20px 0px;
-    display: inline-block !important;
     height: auto !important;
 }
 
@@ -1381,4 +1380,8 @@ input:hover[type="submit"] {
 }
 .page-id-537 form.login.wps_rma_guest_form{
 	width: 40% !important;
+}
+
+.hidereturn-button{
+	display: none !important;
 }

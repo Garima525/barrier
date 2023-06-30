@@ -151,3 +151,23 @@ $(document).ready(function() {
   });
 });
 </script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        // Get the value of the "refund" parameter from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const refundParam = urlParams.get('refund');
+        console.log("REFUND", refundParam)
+                
+
+        // Check if the "refund" parameter exists and has a value of "true"
+        if (refundParam && refundParam.toLowerCase() === 'true') {
+            // Show the button with the name "refund"
+            $('input[name="ced_new_return_request"]').show();   
+        }else{
+            console.log( $('input[name="ced_new_return_request"]'))
+            $('input[name="ced_new_return_request"]').addClass("hidereturn-button");
+
+        }
+    });
+</script>
