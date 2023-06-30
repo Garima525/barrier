@@ -441,59 +441,11 @@ function return_to_shop_button() {
 }
 /*-----end-----*/
 
-/**
- * Add custom parameter to order data on checkout.
- *
- * @param int $order_id The order ID.
- */
-function add_custom_order_parameter( $order_id ) {
-    $order = wc_get_order( $order_id );
-
-    // Add custom parameter to order data
-    $order->set_customer_note( 'refund=false' );
-    $order->save();
-}
-add_action( 'woocommerce_checkout_order_processed', 'add_custom_order_parameter', 10, 1 );
-
-/**
- * Modify the order confirmation page URL to include custom parameter.
- *
- * @param string $url The order confirmation page URL.
- * @param WC_Order $order The order object.
- * @return string Modified URL.
- */
-function modify_confirmation_page_url( $url, $order ) {
-    $refund_param = '';
-
-    // Check if the request is for refund or exchange
-    if ( isset( $_GET['order-received'] ) && isset( $_GET['key'] ) ) {
-        $order_id  = absint( $_GET['order-received'] );
-        $order_key = wc_clean( $_GET['key'] );
-
-        $order = wc_get_order( $order_id );
-        if ( $order && hash_equals( $order->get_order_key(), $order_key ) ) {
-            $refund_param = 'refund=true';
-        }
-    }
-
-    if ( empty( $refund_param ) ) {
-        $refund_param = 'refund=false';
-    }
-
-    $separator = ( strpos( $url, '?' ) === false ) ? '?' : '&';
-    $url .= $separator . $refund_param;
-
-    return $url;
-}
-add_filter( 'woocommerce_get_checkout_order_received_url', 'modify_confirmation_page_url', 10, 2 );
-
 function add_custom_parameter_to_order_received_url( $url, $order_id ) {
     // Check if the request is coming from the specific form (replace 'Wps_Rma_Guest_Form' with the appropriate form class or ID)
     if ( isset( $_POST['wps_wrma_order_id_submit'] ) && isset( $_POST['order_id'] ) && isset( $_POST['order_email'] ) ) {
         // Add your custom parameter to the URL
         $url = add_query_arg( 'refund', 'true', $url );
-    }else{
-        $url = add_query_arg( 'refund', 'false', $url );
     }
     return $url;
 }
