@@ -132,33 +132,22 @@
                         $pallet_fit_height = get_field('pallet_fit_height');
                         $feature = get_field('feature');
                         $capacity = get_field('capacity');?>
-            <table class="demotable">
-               <thead>
-                  <tr>
-                     <th>Stock</th>
-                     <?php if($width && $length){?>
-                     <th><?php if($height){?> #WxLxH
-                        <?php }else{?>
-                        #WxL
-                        <?php }?> 
-                     </th>
-                     <?php }else{?>
-                     <th>Cpacity</th>
-                     <?php }?>
-                     <th>Thickness</th>
-                     <?php 
-                        if($pallet_fit_width && $pallet_fit_length && $pallet_fit_height){?>
-                     <th>Pallet Fit Size</th>
-                     <?php }elseif($feature || $color){?>
-                     <th>Color/Feature</th>
-                     <?php }else{?>
-                     <th>Cpacity</th>
-                     <?php }?>
-                     <th>Qty/Case</th>
-                     <th>Price</th>
-                  </tr>
-               </thead>
-            </table>
+                        <table id='demotable'>
+                           <thead>
+                              <tr>
+                                 <th>Stock</th>
+                                 <th>Thickness</th>
+                                 <?php if($feature || $color) { ?>
+                                 <th>Color/Feature</th>
+                                 <?php }?>
+                                 <?php if($capacity){?>
+                                 <th>Capacity</th>
+                                 <?php } ?>
+                                 <th>Qty/Case</th>
+                                 <th>Price</th>
+                              </tr>
+                           </thead>
+                        </table>
             <?php
                while($products->have_posts()) : $products->the_post(); 
                   $loopcount = $newloopcount.generateRandomString();
@@ -187,25 +176,17 @@
                               <table id="demotablecontent">
                                  <tr>
                                     <td class="stock"> <?=$sku?></td>
-                                    <?php if($width && $length){?>
-                                    <td> <?=$width?>" x <?=$length?>" <?php if($height){?> x <?=$height?>
-                                       <?php }?> 
-                                    </td>
-                                    <?php }else{?>
-                                    <td><?=$capacity?></td>
-                                    <?php }?>
                                     <td> <?=$thickness?> Mil</td>
-                                    <?php if($pallet_fit_width && $pallet_fit_length && $pallet_fit_height){?>
-                                    <td> <?=$pallet_fit_width?>" x <?=$pallet_fit_length?>" x <?=$pallet_fit_height?>"</td>
-                                    <?php }elseif($feature || $color){?>
-                                    <td><?=$color?>
+                                    <?php if($color || $feature){?>
+                                   <td><?=$color?>
                                        <?php if($feature){?>  
                                        /<?=$feature?>
                                        <?php }?>
                                     </td>
-                                    <?php }else{?>
-                                    <td> <?=$capacity?></td>
                                     <?php }?>
+                                    <?php if($capacity) {?>
+                                    <td> <?=$capacity; ?></td>
+                                 <?php }?>
                                     <td> <?=$qty  ?>/ Case</td>
                                     <td class="amount_rate">As low as $<?=$regular_price ?></td>
                                  </tr>
