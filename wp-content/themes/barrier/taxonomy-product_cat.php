@@ -132,22 +132,26 @@
                         $pallet_fit_height = get_field('pallet_fit_height');
                         $feature = get_field('feature');
                         $capacity = get_field('capacity');?>
-                        <table id='demotable'>
-                           <thead>
-                              <tr>
-                                 <th>Stock</th>
-                                 <th>Thickness</th>
-                                 <?php if($feature || $color) { ?>
-                                 <th>Color/Feature</th>
-                                 <?php }?>
-                                 <?php if($capacity){?>
-                                 <th>Capacity</th>
-                                 <?php } ?>
-                                 <th>Qty/Case</th>
-                                 <th>Price</th>
-                              </tr>
-                           </thead>
-                        </table>
+            <table id='demotable'>
+               <thead>
+                  <tr>
+                     <th>Stock</th>
+                     <?php if($width && $length){?>
+                     <th><?php if($height){?> #WxLxH
+                        <?php }else{?>
+                        #WxL
+                        <?php }?> 
+                     </th>
+                     <?php }?>
+                     <th>Thickness</th>
+                     <?php if($capacity){?>
+                     <th>Capacity</th>
+                     <?php } ?>
+                     <th>Qty/Case</th>
+                     <th>Price</th>
+                  </tr>
+               </thead>
+            </table>
             <?php
                while($products->have_posts()) : $products->the_post(); 
                   $loopcount = $newloopcount.generateRandomString();
@@ -176,17 +180,15 @@
                               <table id="demotablecontent">
                                  <tr>
                                     <td class="stock"> <?=$sku?></td>
-                                    <td> <?=$thickness?> Mil</td>
-                                    <?php if($color || $feature){?>
-                                   <td><?=$color?>
-                                       <?php if($feature){?>  
-                                       /<?=$feature?>
-                                       <?php }?>
+                                    <?php if($width && $length){?>
+                                    <td> <?=$width?>" x <?=$length?>" <?php if($height){?> x <?=$height?>
+                                       <?php }?> 
                                     </td>
                                     <?php }?>
+                                    <td> <?=$thickness?> Mil</td>
                                     <?php if($capacity) {?>
-                                    <td> <?=$capacity; ?></td>
-                                 <?php }?>
+                                       <td> <?=$capacity; ?></td>
+                                    <?php }?>
                                     <td> <?=$qty  ?>/ Case</td>
                                     <td class="amount_rate">As low as $<?=$regular_price ?></td>
                                  </tr>
