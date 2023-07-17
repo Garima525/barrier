@@ -131,11 +131,11 @@
                         $pallet_fit_length = get_field('pallet_fit_length');
                         $pallet_fit_height = get_field('pallet_fit_height');
                         $feature = get_field('feature');
-                        $capacity = get_field('capacity');?>
+                        $capacity = get_field('capacity');zz?>
             <table class='demotable'>
                <thead>
                   <tr>
-                     <th>Stock</th>
+                     <th>Item #</th>
                      <?php if($width && $length){?>
                      <th><?php if($height){?> #WxLxH
                         <?php }else{?>
@@ -208,7 +208,7 @@
                                        </div>
                                        <div class="col-md-8 col-7">
                                           <span><?php the_title(); ?>
-                                          Stock #: <?=$sku?></span>
+                                          Item #: <?=$sku?></span>
                                           <div class="view-text py-4"><a href="<?php echo get_permalink(); ?>">View Details</a></div>
                                        </div>
                                     </div>
