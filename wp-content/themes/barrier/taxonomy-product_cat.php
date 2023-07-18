@@ -168,7 +168,7 @@ if ($taxonomy_title != "BAGS") { ?>
                      <th>Thickness</th>
                      <?php if ($value->parent == 27) { ?>
                      <th>Finish/Material</th>
-                     <?php } else { ?>
+                     <?php } elseif($capacity) { ?>
                      <th>Capacity</th>
                      <?php } ?>
                      <th>Qty/Case</th>
@@ -232,7 +232,7 @@ if ($taxonomy_title != "BAGS") { ?>
                                           /<?= $material ?>
                                           <?php } ?>
                                     </td>
-                                    <?php }} else { ?>
+                                    <?php }} elseif($capacity) { ?>
                                     <td><?= $capacity ?></td>
                                     <?php } ?>
                                     <td> <?= $qty ?>/ Case</td>
