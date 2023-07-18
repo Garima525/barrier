@@ -162,7 +162,9 @@ if ($taxonomy_title != "BAGS") { ?>
                         #WxL
                         <?php } ?> 
                      </th>
-                     <?php } ?>
+                     <?php }elseif($color || $feature){?>
+                        <th>Color/Feature</th>
+                     <?php }?>
                      <th>Thickness</th>
                      <?php if ($value->parent == 27) { ?>
                      <th>Finish/Material</th>
@@ -215,7 +217,13 @@ if ($taxonomy_title != "BAGS") { ?>
                                     ) { ?> x <?= $height ?>
                                        <?php } ?> 
                                     </td>
-                                    <?php } ?>
+                                    <?php } elseif($feature || $color){?>
+                                       <td><?=$color?>
+                                          <?php if($feature){?>  
+                                          /<?=$feature?>
+                                          <?php }?>
+                                       </td>
+                                    <?php }?>
                                     <td> <?= $thickness ?> Mil</td>
                                     <?php if ($value->parent == 27) { ?>
                                     <?php if ($finish || $material) { ?>
