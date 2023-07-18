@@ -109,8 +109,8 @@ if ($taxonomy_title != "BAGS") { ?>
                 echo "<h3>" . $value->name . "</h3> <div>";
 
                 $args = [
+                    "post_type" => "product",
                     "post_status" => "publish",
-                    "post__in" => $idArr,
                     "tax_query" => [
                         [
                             "taxonomy" => "product_cat",
@@ -121,6 +121,7 @@ if ($taxonomy_title != "BAGS") { ?>
                     ],
                     "orderby" => "menu_order",
                     "order" => "ASC",
+
                 ];
                 $products = new wp_query($args);
 
