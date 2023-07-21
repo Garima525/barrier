@@ -213,7 +213,7 @@ if ($taxonomy_title != "BAGS") { ?>
                                  <tr>
                                     <td class="stock"> <?= $sku ?></td>
                                     <?php if ($width && $length) { ?>
-                                    <td> <?= $width ?>" x <?= $length ?>" <?php if (
+                                    <td> <?= $length ?>" x <?= $width ?>" <?php if (
                                         $height
                                     ) { ?> x <?= $height ?>
                                        <?php } ?> 
