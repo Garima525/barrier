@@ -228,10 +228,9 @@ if ($taxonomy_title != "BAGS") { ?>
                                     <td> <?= $thickness ?> Mil</td>
                                     <?php if ($value->parent == 27) { ?>
                                     <?php if ($finish || $material) { ?>
-                                    <td> <?= $finish ?> 
-                                          <?php if ($material) { ?>  
-                                          /<?= $material ?>
-                                          <?php } ?>
+                                    <td><?= $finish ?><?php if ($material) { ?>/<?= $material ?>
+                                          <?php } ?><?php if ($feature) { ?>/<?= $feature ?>
+                                        <?php } ?>
                                     </td>
                                     <?php }} elseif($capacity) { ?>
                                     <td><?= $capacity ?></td>
