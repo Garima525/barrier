@@ -1385,3 +1385,7 @@ input:hover[type="submit"] {
 .hidereturn-button{
 	display: none !important;
 }
+.single-product.woocommerce table.shop_attributes td{
+    width: 25%;
+    font-style: normal;
+}
