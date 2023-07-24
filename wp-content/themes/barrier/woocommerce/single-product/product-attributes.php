@@ -35,13 +35,13 @@ if ( ! $product_attributes ) {
         </tr>
     <?php
     // Check if the current item is the last item
-    $feature = the_field('feature');
+    $feature = get_field('feature');
     if($feature):
     if ($product_attribute_key === $last_item_key) :
     ?>
         <tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--acf-feature">
             <th class="woocommerce-product-attributes-item__label">Feature</th>
-            <td class="woocommerce-product-attributes-item__value"><?php the_field('feature'); ?></td>
+            <td class="woocommerce-product-attributes-item__value"><?php echo $feature ?></td>
         </tr>
     <?php endif; ?>
     <?php endif; ?>
