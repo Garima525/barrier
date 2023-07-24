@@ -231,7 +231,7 @@ if ($taxonomy_title != "BAGS") { ?>
                                     <td> <?= $finish ?> 
                                           <?php if ($material) { ?>  
                                           /<?= $material ?>
-                                          <?php } ?>/<?=$feature?>
+                                          <?php } ?><?php if ($feature) { ?>/<?=$feature?> <?php}?>
                                     </td>
                                     <?php }} elseif($capacity) { ?>
                                     <td><?= $capacity ?></td>
