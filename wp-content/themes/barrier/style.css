@@ -1389,3 +1389,6 @@ input:hover[type="submit"] {
     width: 25%;
     font-style: normal;
 }
+.tax-product_cat.term-custom-bags form{
+    display: inherit !important;
+}
