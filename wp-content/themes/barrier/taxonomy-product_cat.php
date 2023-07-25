@@ -16,7 +16,7 @@ $taxonomy = get_queried_object();
 $taxonomy_img = get_taxonomy_image( $taxonomy->term_taxonomy_id );
 $taxonomy_title = $taxonomy->name ;
 
-if($taxonomy_title == 'BAGS'){
+if($taxonomy_title != 'BAGS'){
 ?>
     <section class="stroke-section product-cards">
          <div class="container">
