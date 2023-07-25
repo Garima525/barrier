@@ -384,30 +384,28 @@ if ($taxonomy_title != "BAGS") { ?>
       </div>
    </div>
 </section>
-<?php } else { ?>
+
+<?php }else{ ?>
+
 <div class="bags-template">
-   <h2>Recent Posts</h2>
-   <?php
-   $args = [
-       "post_type" => "page",
-       "p" => 473
-   ];
-   $query = new WP_Query($args);
-   if ($query->have_posts()):
-       while ($query->have_posts()):
-           $query->the_post(); ?>
-   <div class="bags">
-      <?php
-      $page = get_template_part("templates/custom-product");
-      echo $page;
-      ?>
-   </div>
-   <?php
-       endwhile;
-       wp_reset_postdata();
-   endif;
-   ?>
+  <h2>Recent Posts</h2>
+  <?php
+  $args = array(
+    'post_type' => 'page',
+    'p' => 473
+  );
+  $query = new WP_Query( $args );
+  if ( $query->have_posts() ) :
+    while ( $query->have_posts() ) : $query->the_post(); ?>
+      <div class="bags">
+         <?php $page = get_template_part( 'templates/custom-product' );
+         echo $page; ?>
+      </div>
+    <?php endwhile;
+    wp_reset_postdata();
+  endif; ?>
 </div>
-<?php }
-?>
+
+<?php } ?>
+
 <?php get_footer(); ?>
