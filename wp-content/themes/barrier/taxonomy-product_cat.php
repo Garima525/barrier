@@ -14,7 +14,7 @@ $taxonomy = get_queried_object();
 
 $taxonomy_img = get_taxonomy_image($taxonomy->term_taxonomy_id);
 $taxonomy_title = $taxonomy->name;
-if ($taxonomy_title != "BAGS") { ?>
+if($taxonomy_title != 'BAGS'){ ?>
 <section class="stroke-section product-cards">
    <div class="container">
       <div class="row">
@@ -385,8 +385,7 @@ if ($taxonomy_title != "BAGS") { ?>
    </div>
 </section>
 
-<?php }else{ ?>
-
+<?php } else{ ?>
 <div class="bags-template">
   <h2>Recent Posts</h2>
   <?php
@@ -405,7 +404,6 @@ if ($taxonomy_title != "BAGS") { ?>
     wp_reset_postdata();
   endif; ?>
 </div>
-
 <?php } ?>
 
 <?php get_footer(); ?>
