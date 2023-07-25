@@ -390,7 +390,7 @@ if ($taxonomy_title != "BAGS") { ?>
    <?php
    $args = [
        "post_type" => "page",
-       "p" => 473,
+       "p" => 473
    ];
    $query = new WP_Query($args);
    if ($query->have_posts()):
