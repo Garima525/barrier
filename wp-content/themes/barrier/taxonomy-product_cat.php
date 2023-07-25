@@ -390,7 +390,7 @@ if ($taxonomy_title != "BAGS") { ?>
    <?php
    $args = [
        "post_type" => "page",
-       "p" => 323,
+       "p" => 473,
    ];
    $query = new WP_Query($args);
    if ($query->have_posts()):
@@ -398,7 +398,7 @@ if ($taxonomy_title != "BAGS") { ?>
            $query->the_post(); ?>
    <div class="bags">
       <?php
-      $page = get_template_part("templates/about-us");
+      $page = get_template_part("templates/custom-product");
       echo $page;
       ?>
    </div>
