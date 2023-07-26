@@ -450,3 +450,6 @@ function add_custom_parameter_to_order_received_url( $url, $order_id ) {
     return $url;
 }
 add_filter( 'woocommerce_get_checkout_order_received_url', 'add_custom_parameter_to_order_received_url', 10, 2 );
+
+
+add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );
